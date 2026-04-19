@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+coverage/
+.env
+node_modules/
+dist/
+coverage/
+*.js
+*.cjs
+*.mjs
+*.json
+*.html
+*.css
+src/public/**/*

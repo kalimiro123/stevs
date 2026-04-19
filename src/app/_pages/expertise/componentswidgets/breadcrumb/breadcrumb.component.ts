@@ -1,0 +1,11 @@
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+
+@Component({
+  selector: 'app-breadcrumb',
+  imports: [],
+  templateUrl: './breadcrumb.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class BreadcrumbComponent {
+
+}

@@ -1,0 +1,116 @@
+<section class="leadershipT-section">
+    <div class="container">
+          <!-- Title -->
+              <div class="members-header mb-5">
+                  <div class="circle-label">
+                      <span class="d-flex align-items-center gap-2"><i class="fas fa-circle"></i> <i
+                              class="fas fa-circle"></i>
+                      </span> Leadership Transformatif
+                  </div>
+                  <h3 class="fw-bold">De la prise de conscience à la création d’impacts</h3>
+              </div>
+              <p class="mb-4 paragline">
+                  Être leader, commence d’abord par une prise de conscience profonde de son potentiel et de sa personnalité, ainsi que de la nécessité de soigner et d’investir dans cette posture devenue un « actif immatériel » à impact immédiat sur les équipes, l’organisation et la relation avec l’écosystème. Les leaders, ayant réussi à créer et durabiliser cet impact positif, ont opté pour un style de leadership transformatif et ont commencé leurs parcours par articuler une vision claire et inspirante pour l'avenir, capable de stimuler l'innovation et la créativité des managers et de mobiliser 
+                  les équipes dans la recherche des solutions nouvelles aux enjeux organisationnels complexes
+              </p>
+  
+  
+          <div class="row g-4 g-lg-5">
+                  <div class="col-lg-12">
+                  <h6 class="fw-bold">Cette dynamique ne peut réussir que si ces leaders transformateurs préparent certains prérequis :</h6>
+                  </div>
+              <!-- PRINCIPE 1 : Agissent en modèle / Valeurs & comportements -->
+                  <!-- RIGHT: Content -->
+  
+                  <div class="col-12 col-lg-5 ldr-wheel-col">
+              
+                              <!-- Center circle — outside wrapper so it sticks out left -->
+                              <div class="ldr-wheel-center">
+                                  <span>Leadership<br>Transformateur</span>
+                              </div>
+                      
+                              <!-- Half circle wrapper — overflow hidden cuts left half -->
+                              <div class="ldr-wheel-wrapper">
+                      
+                              <!-- Segment 1 — top -->
+                              <div class="ldr-seg ldr-seg-1"
+                                  [class.ldr-seg-active]="activeSlice === 0"
+                                  (click)="selectSlice(0)">
+                                  <div class="ldr-seg-icon ldr-icon-1">
+                                      <img src="images/expertise/leader1.svg" alt="Leadership Icon" class="w-50">
+                                  </div>
+                              </div>
+                      
+                              <!-- Segment 2 — middle right -->
+                              <div class="ldr-seg ldr-seg-2"
+                                  [class.ldr-seg-active]="activeSlice === 1"
+                                  (click)="selectSlice(1)">
+                                  <div class="ldr-seg-icon ldr-icon-2">
+                                      <img src="images/expertise/leader2.svg" alt="Leadership Icon" class="w-50">
+                                  </div>
+                              </div>
+                      
+                              <!-- Segment 3 — bottom -->
+                              <div class="ldr-seg ldr-seg-3"
+                                  [class.ldr-seg-active]="activeSlice === 2"
+                                  (click)="selectSlice(2)">
+                                  <div class="ldr-seg-icon ldr-icon-3">
+                                    <img src="images/expertise/leader3.svg" alt="Leadership Icon" class="w-50">
+                                  </div>
+                              </div>
+  
+                              <!-- Segment 4 — bottom -->
+                              <div class="ldr-seg ldr-seg-4"
+                                  [class.ldr-seg-active]="activeSlice === 3"
+                                  (click)="selectSlice(3)">
+                                  <div class="ldr-seg-icon ldr-icon-4">
+                                     <img src="images/expertise/leader4.svg" alt="Leadership Icon" class="w-50">
+                                  </div>
+                              </div>
+                      
+                              <!-- Ring border -->
+                              <div class="ldr-ring"></div>
+                      
+                              </div>
+                      
+                              <!-- Connector dot + dashed line -->
+                              <div class="ldr-connector">
+                                  <div class="ldr-connector-dot"></div>
+                                  <div class="ldr-connector-line"></div>
+                              </div>
+              
+                  </div>
+                  
+                  <!-- RIGHT: Content -->
+                  <div class="col-12 col-lg-7 ldr-content-col">
+              
+                      <div class="ldr-content" *ngIf="activeSlice === 0">
+                      <h4 class="ldr-title">Leadership & Coaching</h4>
+                      <p class="ldr-desc">Accompagner les leaders dans le développement de leur posture, de leur impact et de leur capacité à engager leurs équipes. Définition du profil du Manager-type (compétences, attitudes, connaissances) et évaluation de l'écart avec l'existant.</p>
+                      </div>
+              
+                      <div class="ldr-content" *ngIf="activeSlice === 1">
+                      <h4 class="ldr-title">Transformation de la culture managériale</h4>
+                      <p class="ldr-desc">Définition du profil du Manager-type (compétences, attitudes, connaissances) Evaluation de l'écart avec l'existant (réalisation des bilans de compétences et tests de personnalité, assessments 360, immersion, ...) Institutionnalisation des pratiques managériales Formation</p>
+                      </div>
+              
+                      <div class="ldr-content" *ngIf="activeSlice === 2">
+                      <h4 class="ldr-title">Formation & Développement</h4>
+                      <p class="ldr-desc">Concevoir et déployer des programmes de formation adaptés aux besoins des managers et dirigeants. Institutionnalisation des pratiques managériales et suivi de la montée en compétences.</p>
+                      </div>
+  
+                      <div class="ldr-content" *ngIf="activeSlice === 3">
+                      <h4 class="ldr-title">Transformation de la culture managériale ds</h4>
+                      <p class="ldr-desc">Définition du profil du Manager-type (compétences, attitudes, connaissances) Evaluation de l'écart avec l'existant (réalisation des bilans de compétences et tests de personnalité, assessments 360, immersion, ...) Institutionnalisation des pratiques managériales Formation</p>
+                      </div>
+              
+                      <button class="ldr-btn-masterclass">
+                      Nos MasterClasses de Leadership <i class="fa fa-chevron-right ms-2"></i>
+                      </button>
+              
+                  </div>
+              <!---->
+          </div>
+  
+    </div>
+  </section>

@@ -1,0 +1,274 @@
+<link rel="stylesheet" href="/css/header2.css">
+<link rel="stylesheet" href="/css/agenda.css">
+
+
+
+<section class="bodyCalendar">
+
+  <div class="container my-5 py-5">
+
+    <div class="row g-4">
+
+      <div class="col-lg-5">
+        <div class="calendar-container">
+
+          <!-- Top filters -->
+          <div class="calendar-header">
+
+            <mat-form-field appearance="outline">
+              <mat-select [(ngModel)]="selectedCountry" placeholder="Sélectionnez pays">
+                <mat-option *ngFor="let c of countries" [value]="c">
+                  {{ c }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-select [(ngModel)]="selectedTimezone" placeholder="Fuseau horaire">
+                <mat-option *ngFor="let t of timezones" [value]="t">
+                  {{ t }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+          </div>
+
+          <!-- Calendar -->
+          <mat-calendar [(selected)]="selectedDate" class="agendabox"></mat-calendar>
+
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="timeline-container">
+
+          <div class="timeline-list" #timelineList>
+        
+            <!-- Event 1 -->
+            <div class="event-card" [class.active]="activeIndex === 0">
+        
+              <div class="d-flex align-items-center justify-content-between"
+                   (click)="toggleEvent(0)">
+        
+                <div class="d-flex align-items-start gap-3">
+                  <div class="event-icon text-primary">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+        
+                  <div class="d-flex flex-column gap-3 py-3">
+                    <h6 class="mb-1">Conférence Leadership</h6>
+        
+                    <div class="small">
+                      <i class="far fa-calendar-alt me-1"></i> 12 Juin 2026
+                      <i class="far fa-clock ms-2 me-1"></i> 10:00
+                    </div>
+        
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="small">
+                        <i class="fas fa-map-marker-alt me-1"></i> Casablanca
+                      </div>
+        
+                      <div class="small">
+                        <img src="https://flagcdn.com/w40/ma.png" width="18">
+                        Maroc
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <i class="fas"
+                   [ngClass]="activeIndex === 0 ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+              </div>
+        
+              <div class="event-content" *ngIf="activeIndex === 0">
+                <p class="mt-3">
+                  Une conférence dédiée au développement du leadership féminin et à l’innovation.
+                </p>
+        
+                <div class="event-btns d-flex flex-wrap gap-2">
+                  <button class="btn btn-sm">Voir le programme</button>
+                  <button class="btn btn-sm">Voir le detail offre</button>
+                  <button class="btn btn-sm">Voir la notation</button>
+                  <button class="btn btn-sm">Réserver ma place</button>
+                </div>
+              </div>
+        
+            </div>
+        
+        
+            <!-- Event 2 -->
+            <div class="event-card" [class.active]="activeIndex === 1">
+        
+              <div class="d-flex align-items-center justify-content-between"
+                   (click)="toggleEvent(1)">
+        
+                <div class="d-flex align-items-start gap-3">
+                  <div class="event-icon text-danger">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+        
+                  <div class="d-flex flex-column gap-3 py-3">
+                    <h6 class="mb-1">Workshop Design</h6>
+        
+                    <div class="small">
+                      <i class="far fa-calendar-alt me-1"></i> 20 Juin 2026
+                      <i class="far fa-clock ms-2 me-1"></i> 14:00
+                    </div>
+        
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="small">
+                        <i class="fas fa-map-marker-alt me-1"></i> Rabat
+                      </div>
+        
+                      <div class="small">
+                        <img src="https://flagcdn.com/w40/ma.png" width="18">
+                        Maroc
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <i class="fas"
+                   [ngClass]="activeIndex === 1 ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+              </div>
+        
+              <div class="event-content" *ngIf="activeIndex === 1">
+                <p class="mt-3">
+                  Atelier interactif autour du design thinking et de l’expérience utilisateur.
+                </p>
+        
+                <div class="event-btns d-flex flex-wrap gap-2">
+                  <button class="btn btn-sm">Voir le programme</button>
+                  <button class="btn btn-sm">Voir le detail offre</button>
+                  <button class="btn btn-sm">Voir la notation</button>
+                  <button class="btn btn-sm">Réserver ma place</button>
+                </div>
+              </div>
+        
+            </div>
+        
+          </div>
+        
+          <!-- Navigation -->
+          <div class="timeline-nav text-center mt-3">
+            <button class="btn btn-sm" (click)="scrollUp()">
+              <i class="fas fa-chevron-up"></i>
+            </button>
+        
+            <button class="btn btn-sm" (click)="scrollDown()">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+
+<section class="testimonial-section py-5">
+  <div class="container">
+
+    <div class="circle-label">
+      <span class="d-flex align-items-center gap-2">
+        <i class="fas fa-circle"></i>
+        <i class="fas fa-circle"></i>
+      </span>
+      Ce que disent nos leaders
+    </div>
+
+    <owl-carousel-o [options]="customOptions" class="testimonial-carousel">
+
+      <!-- Card 1 -->
+      <ng-template carouselSlide>
+        <div class="testimonial-card">
+
+          <div class="quote-icon text-primary">
+            <i class="fas fa-quote-left"></i>
+          </div>
+
+          <div class="profile">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+          </div>
+
+          <p>
+            Grâce à <a href="#">WomenLead</a>, j’ai non seulement développé mes compétences professionnelles,
+            mais j’ai également beaucoup appris sur moi-même et sur la façon de surmonter les défis personnels.
+          </p>
+
+          <h6 class="name">Patrick Luc</h6>
+          <div class="role">Community manager</div>
+          <small class="company">Oracle Database</small>
+
+          <a href="#" class="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+        </div>
+      </ng-template>
+
+      <!-- Card 2 -->
+      <ng-template carouselSlide>
+        <div class="testimonial-card">
+
+          <div class="quote-icon text-danger">
+            <i class="fas fa-quote-left"></i>
+          </div>
+
+          <div class="profile">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+          </div>
+
+          <p>
+            Le programme <a href="#">WomenLead</a> a véritablement transformé ma carrière,
+            me permettant de prendre des décisions plus stratégiques et d’assumer des rôles
+            de leadership avec confiance.
+          </p>
+
+          <h6 class="name">Emma Iris</h6>
+          <div class="role">Architecte d’intérieur</div>
+          <small class="company">Baumgartner Partner</small>
+
+          <a href="#" class="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+        </div>
+      </ng-template>
+
+      <!-- Card 3 -->
+      <ng-template carouselSlide>
+        <div class="testimonial-card">
+
+          <div class="quote-icon text-success">
+            <i class="fas fa-quote-left"></i>
+          </div>
+
+          <div class="profile">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
+          </div>
+
+          <p>
+            Participer à ce programme m’a donné l’opportunité de rencontrer et de collaborer
+            avec des femmes exceptionnelles de divers secteurs, élargissant ainsi mon réseau professionnel.
+          </p>
+
+          <h6 class="name">Pamela Lia</h6>
+          <div class="role">Chargé de communication digitale</div>
+          <small class="company">Pixated</small>
+
+          <a href="#" class="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+        </div>
+      </ng-template>
+
+    </owl-carousel-o>
+
+  </div>
+</section>
+

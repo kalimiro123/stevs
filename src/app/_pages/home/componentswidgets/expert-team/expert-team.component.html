@@ -1,0 +1,114 @@
+<div class="Expert-team-section">
+    <div class="container my-5">
+      <!-- HEADER -->
+      <div class="members-section bg-transparent mb-5">
+        <div class="circle-label">
+          <span class="d-flex align-items-center gap-2"><i class="fas fa-circle"></i> <i class="fas fa-circle"></i>
+          </span> Experts Team
+        </div>
+  
+        <h2 class="font-bold mt-0">A committed team of experts to serve you</h2>
+  
+        <div class="members-intro">
+          <p>
+            Notre équipe <b>d'expert(e)s</b>, composée d'<b>exécutives, d'administrateurs</b> de sociétés et <b>consultant(e)s</b> expérimenté(e)s, mettront à votre disposition des insights précieux et des solutions prouvées pour atteindre vos objectifs et gérer vos enjeux complexes.
+          </p>
+        </div>
+      </div>
+  
+  
+  
+      <div class="row Expert-team-content">
+  
+        <!-- LEFT SIDE WRAPPER -->
+        <div class="col-md-4 d-flex">
+  
+          <!-- ARROWS + COUNTER -->
+          <div class="slider-controls d-flex flex-column align-items-center justify-content-center">
+  
+            <div class="arrow" (click)="scrollUp()">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+  
+            <div class="counter">
+              <span class="current">{{ currentIndex }}</span>
+              <span class="separator"> / </span>
+              <span class="total">{{ totalCount }}</span>
+            </div>
+  
+            <div class="arrow" (click)="scrollDown()">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+  
+          </div>
+  
+          <!-- TEAM LIST -->
+          <div class="team-list flex-grow-1 ms-3">
+  
+            <div>
+              <div *ngFor="let member of visibleTeam; let i = index" class="team-card"
+              [class.active]="selectedIndex === (i + visibleStart)" (click)="selectMember(i)">
+  
+              <h6>{{ member.name }}</h6>
+              <small>{{ member.role }}</small>
+  
+              <div class="country">
+                <img [src]="member.flag" width="18">
+                {{ member.country }}
+              </div>
+  
+            </div>
+            </div>
+  
+            <button class="btn btn-dark w-100">Rejoindre l'équipe <i class="fa-solid fa-chevron-right"></i></button>
+  
+          </div>
+  
+        </div>
+  
+        <!-- RIGHT SIDE -->
+        <div class="col-md-8">
+  
+          <div class="team-details" *ngIf="selectedMember">
+  
+            <div class="team-details-header">
+              <img [src]="selectedMember.image" class="avatar">
+  
+              <div class="team-details-info">
+                <div class="team-details-NameRs">
+                  <h5>{{ selectedMember.name }}</h5>
+                  <div class="team-details-social">
+                    <a href="{{ selectedMember.rs.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="{{ selectedMember.rs.facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="{{ selectedMember.rs.linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="{{ selectedMember.rs.x_twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                  </div>
+                </div>             
+                <div class="role">{{ selectedMember.role }}</div>
+                <div class="poste">{{ selectedMember.poste }}</div>
+                <div class="country mt-0">
+                  <img
+                    [src]="selectedMember.flag"
+                    [alt]="selectedMember.country"
+                    width="18"
+                  /> 
+                  {{ selectedMember.country }} 
+                </div>
+              </div>
+            </div>
+  
+            <span class="badge-bio">Bio</span>
+  
+            <div class="team-details-bio">
+              {{ selectedMember.bio }}
+            </div>
+  
+            
+  
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,140 @@
+/* Styles for PolitiqueComponent */
+
+.bodyPolitique .circle-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.bodyPolitique .circle-label i {
+    color: #343434;
+    font-size: 10px;
+}
+
+/**/
+
+.bodyPolitique .circle-label i:first-child {
+    color: #2ecc71;
+
+}
+
+.bodyPolitique .identity-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #1f2d3d;
+}
+
+.bodyPolitique .identity-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #5f6c7b;
+    margin-bottom: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bodyPolitique .policy-section {
+    background: #FFFFFF;
+    padding: 60px 0;
+}
+
+/* LEFT MENU */
+.bodyPolitique .policy-section .policy-menu li {
+    padding: 12px 0;
+    color: #9aa0a6;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.bodyPolitique .policy-section .policy-menu li.active {
+    color: #198754;
+    font-weight: 600;
+}
+
+/* ACCORDION CUSTOM */
+.bodyPolitique .policy-section .custom-accordion .accordion-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.policy-section .custom-accordion .accordion-button {
+    background: transparent;
+    box-shadow: none;
+    padding-left: 0;
+    font-weight: 500;
+}
+
+.bodyPolitique .policy-section .custom-accordion .accordion-button:not(.collapsed) {
+    color: #000;
+}
+
+.bodyPolitique .policy-section .custom-accordion .accordion-body {
+    border-left: 3px solid #198754;
+    margin-left: 30px;
+    padding-left: 15px;
+    color: #6c757d;
+}
+
+/* Remove default arrow */
+.bodyPolitique .policy-section .accordion-button::after {
+    display: none;
+}
+
+
+
+
+/****/
+.bodyPolitique .fs-15 {
+    font-size: 15px;
+}
+
+.bodyPolitique .fs-18 {
+    font-size: 18px;
+}
+
+.bodyPolitique .fs-20 {
+    font-size: 20px;
+}
+
+.bodyPolitique .btn-become-partner {
+    border-radius: 3px;
+    background: #04042C;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bodyPolitique .w-32 {
+    width: 32px;
+}
+
+.bodyPolitique .h-32 {
+    height: 32px;
+}
+
+.bodyPolitique .bgblue1 {
+    background-color: #F9FBFE;
+}
+
+
+
+.bodyPolitique .gov-accordion-item .accordion-body {
+    display: none;
+}
+
+.bodyPolitique .gov-accordion-item.open .accordion-body {
+    display: block;
+}

@@ -1,0 +1,226 @@
+.origin-master-section{
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+
+
+  .scene {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    min-height: 420px;
+  }
+  /* ── FLOWER ── */
+  .scene .flower {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    flex-shrink: 0;
+  }
+  .scene .center {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 148px; height: 148px;
+    background: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    z-index: 10;
+  }
+  .scene .center p {
+    font-size: 9.5px;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    line-height: 1.45;
+  }
+  .scene .petal {
+    position: absolute;
+    width: 100px; height: 100px;
+    background: white;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: background 0.25s, transform 0.2s;
+    border: none;
+  }
+  .scene .petal svg { width: 38px; height: 38px; transition: stroke 0.25s; }
+  .scene .petal:hover { transform: scale(1.07); }
+  .scene .petal.active { background: #2e7d2e; }
+  .scene .petal.active svg * { stroke: white !important; }
+
+  /* Each petal unique shape – rounded towards outside */
+  /* top-left */
+  .scene .p0 { top: 14px; left: 14px; border-radius: 50% 14px 14px 14px; }
+  /* top-right */
+  .scene .p1 { top: 14px; right: 14px; border-radius: 14px 50% 14px 14px; }
+  /* right */
+  .scene .p2 { top: 50%; right: -8px; transform: translateY(-50%); border-radius: 14px 50% 50% 14px; }
+  /* bottom-right (active) */
+  .scene .p3 { bottom: 14px; right: 14px; border-radius: 14px 14px 50% 14px; }
+  /* bottom */
+  .scene .p4 { bottom: -4px; left: 50%; transform: translateX(-50%); border-radius: 14px 14px 50% 50%; }
+  /* bottom-left */
+  .scene .p5 { bottom: 14px; left: 14px; border-radius: 14px 14px 14px 50%; }
+  /* left */
+  .scene .p6 { top: 50%; left: -8px; transform: translateY(-50%); border-radius: 50% 14px 14px 50%; }
+
+  .scene .p2:hover { transform: translateY(-50%) scale(1.07); }
+  .scene .p4:hover { transform: translateX(-50%) scale(1.07); }
+  .scene .p6:hover { transform: translateY(-50%) scale(1.07); }
+
+  /* ── INFO PANEL ── */
+  .scene .info-side {
+    width: 260px;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+  .scene .info-side h5 {
+    color: #2e7d2e;
+    font-weight: 800;
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .scene .info-side p {
+    font-size: 13.5px;
+    color: #2c2c2c;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* --- Accordions --- */
+.policy-section {
+    background: #FFFFFF;
+    padding: 60px 0;
+}
+
+/* LEFT MENU */
+ .policy-menu li {
+    padding: 12px 0;
+    color: #9aa0a6;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.policy-menu li.active {
+    color: #198754;
+    font-weight: 600;
+}
+
+ .in-linetab.policy-menu li.active{border-right: 2px solid #198754;}
+/* ACCORDION CUSTOM */
+ .custom-accordion .accordion-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+ .custom-accordion .accordion-button {
+    background: transparent;
+    box-shadow: none;
+    padding-left: 0;
+    font-weight: 500;
+}
+
+ .custom-accordion .accordion-button:not(.collapsed) {
+    color: #000;
+}
+
+ .custom-accordion .accordion-body {
+    border-left: 3px solid #198754;
+    margin-left: 30px;
+    padding-left: 15px;
+    color: #6c757d;
+}
+
+/* Remove default arrow */
+ .accordion-button::after {
+    display: none;
+}
+
+.gov-accordion-item .accordion-body {
+    display: none;
+}
+
+ .gov-accordion-item.open .accordion-body {
+    display: block;
+}
+
+/****/
+
+
+/**tabs buttons */
+
+.custom-tabs .nav-link.active {
+    background-color: #04740C;
+    color: #fff;
+}
+.custom-tabs .nav-link {
+    background-color: #F0F3FA;
+    color: #04042C;
+}
+
+
+@media screen and (max-width: 768px) {
+  .scene {
+    flex-direction: column;
+  }
+}
+
+
+/*Program video**/
+.video-container {
+  width: 640px;
+  border-radius: 4px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+.video-container .video-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.play-button-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+.play-button-wrapper #circle-play-b {
+  cursor: pointer;
+  pointer-events: auto;
+}
+.play-button-wrapper #circle-play-b svg {
+  width: 100px;
+  height: 100px;
+  fill: #fff;
+  stroke: #fff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  opacity: 0.9;
+}
+/***/

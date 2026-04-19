@@ -1,0 +1,242 @@
+<section class="py-5 bg-grey">
+    <div class="container">
+        
+        <!-- Title -->
+        <div class="members-header mb-4">
+            <div class="circle-label">
+                <span class="d-flex align-items-center gap-2"><i class="fas fa-circle"></i> <i
+                        class="fas fa-circle"></i>
+                </span> Nos Programmes Originaux
+            </div>
+            <h3 class="fw-bold">Des programmes taillés sur vos enjeux organisationnels</h3>
+        </div>
+        <p class="mb-4 paragline">
+            Nos programmes sont conçus minutieusement pour répondre aux enjeux complexes de l’économie, la planète et l’humanité
+        </p>
+        <!---->
+
+
+
+        <!--Tabs part(1)-->
+        <div class="row g-4">
+
+            <div class="col-lg-3">
+                <!-- Tabs -->
+                <ul class="nav custom-tabs mb-4 gap-2" id="eventsTab" role="tablist">
+                    <li class="nav-item w-100 d-flex justify-content-between align-items-center">
+                        <button class="nav-link active d-flex justify-content-between align-items-center w-100" data-bs-toggle="tab" data-bs-target="#tab1">
+                            WomenLead Program
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item w-100 d-flex justify-content-between align-items-center">
+                        <button class="nav-link d-flex justify-content-between align-items-center w-100" data-bs-toggle="tab" data-bs-target="#tab2">
+                            CEOElite Program
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item w-100 d-flex justify-content-between align-items-center">
+                        <button class="nav-link d-flex justify-content-between align-items-center w-100" data-bs-toggle="tab" data-bs-target="#tab3">
+                            <span> NextGen Leaders Program </span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </li>
+
+                    <li class="nav-item w-100 d-flex justify-content-between align-items-center">
+                        <button class="nav-link d-flex justify-content-between align-items-center w-100" data-bs-toggle="tab" data-bs-target="#tab4">
+                            <span> Psychology & Sociology for Leaders </span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item w-100 d-flex justify-content-between align-items-center">
+                        <button class="nav-link d-flex justify-content-between align-items-center w-100" data-bs-toggle="tab" data-bs-target="#tab5">
+                            <span> SustainabilityLead Program </span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-9">
+                <!-- Tab Content -->
+                <div class="tab-content">
+
+                    <!-- TAB 1 -->
+                    <div class="tab-pane fade show active" id="tab1">
+                        <div class="row g-4 justify-content-center text-center mt-2">
+                            <div class="col-md-9">
+                              video positionnement..1
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 -->
+                    <div class="tab-pane fade" id="tab2">
+                        <div class="row g-4 justify-content-center text-center mt-2">
+                            <div class="col-md-9">
+                                content-encours..2
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 -->
+                    <div class="tab-pane fade" id="tab3">
+                        <div class="row g-4 justify-content-center text-center mt-2">
+                            <!-- MAIN CONTENT -->
+                            <div class="col-md-9">
+                                content-encours..3
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- TAB 4 -->
+                    <div class="tab-pane fade" id="tab4">
+                        <div class="row g-4 justify-content-center text-center mt-2">
+                            <div class="col-md-9">
+                                content-encours..4
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 5 -->
+                    <div class="tab-pane fade" id="tab5">
+                        <div class="row g-4 justify-content-center text-center mt-2">
+                            <div class="col-md-9">
+                                content-encours..5
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Tabs part -->
+            </div>
+
+        </div>
+        <!--Tabs part(1)-->
+
+
+        <!--Tabs-Accordions(2)-->
+        <div class="row">
+            <!-- LEFT MENU -->
+            <div class="col-md-3">
+                <ul class="list-unstyled policy-menu in-linetab">
+                    <li [class.active]="activeTab === 1" (click)="setTab(1)">
+                        Description
+                    </li>
+
+                    <li [class.active]="activeTab === 2" (click)="setTab(2)">
+                        Objectifs
+                    </li>
+
+                    <li [class.active]="activeTab === 3" (click)="setTab(3)">
+                        Avantages
+                    </li>
+                    <li [class.active]="activeTab === 4" (click)="setTab(4)">
+                        Prérequis
+                    </li>
+                    <li [class.active]="activeTab === 5" (click)="setTab(5)">
+                       Population cible
+                    </li>
+                    <li [class.active]="activeTab === 6" (click)="setTab(6)">
+                        Contenu
+                    </li>
+                </ul>
+            </div>
+            <!-- RIGHT CONTENT -->
+            <div class="col-md-9">
+                <!-- TAB 1 -->
+                <div *ngIf="activeTab === 1">
+                    <h5 class="fw-bold mb-3 fs-15">Le programme WomenLead est spécifiquement conçu pour : </h5>
+                    <span class="mb-4 fs-15 d-block">
+                        <b> 1. Les Femmes Professionnelles en Début de Carrière :</b> Celles qui cherchent à développer leurs compétences en leadership et à accélérer leur progression professionnelle.
+                    </span>
+                    <span class="mb-4 fs-15 d-block">
+                        <b>2. Les Entrepreneurs Féminins :</b> Les femmes dirigeant leurs propres entreprises ou start-ups, désireuses de renforcer leur capacité à diriger et à gérer des équipes tout en développant leur réseau professionnel. 
+                    </span>
+                    <span class="mb-4 fs-15 d-block">
+                         <b>3. Les Étudiantes et Diplômées Récentes :</b> Les jeunes femmes en fin d'études ou récemment diplômées, intéressées par le développement de compétences pratiques en leadership pour réussir leur entrée sur le marché du travail
+                    </span>
+                    <span class="mb-4 fs-15 d-block">
+                        <b>4. Les Femmes en Transition de Carrière :</b> Celles qui cherchent à changer de secteur ou de rôle, souhaitant acquérir de nouvelles compétences et perspectives pour réussir dans leurs nouvelles fonctions. En somme, WomenLead s'adresse à toutes les femmes aspirant à développer leur potentiel de leadership,
+                        quel que soit leur secteur d'activité ou leur niveau d'expérience.
+                    </span>
+                        
+                     <div class="text-center mt-5">
+                        <button class="btn btn-dark float-end" aria-label="Voir plus">Découvrir l'offre <i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- TAB 2 -->
+                <div *ngIf="activeTab === 2">
+                    <h4 class="fw-bold mb-3">NOS PARCOURS COLLABORATEUR CONÇUS AVEC SOIN ET AMOUR</h4>
+                    <p class="mb-4 fs-15">
+                        Nous ciblons, recrutons, formons, investissons dans l'épanouissement et l'équilibre de vie de
+                        nos équipes, de même, nous proposons des plans de carrière attractifs aux collaborateurs qui ont
+                        <b>le focus sur l'humain et sont capables de servir et épauler les leaders et leurs équipes dans
+                            leur démarche de création de valeur</b> conformément à notre vision et valeurs. Raison pour
+                        laquelle, nous avons pris du temps pour <b>concevoir le parcours collaborateur de nos équipes
+                            avec soin et dévouement.</b>
+                    </p>
+
+                    <div class="d-flex flex-column flex-md-row align-items-center gap-3 mt-4 mb-4 p-4 bg-infoste">
+                        <span class="text-muted">Si vous êtes intéressé(e)s de rejoindre une équipe internationale,
+                            multiculturelle et solidaire, nous sommes là pour accueillir.</span>
+                        <button class="btn btn-dark w-50">Rejoindre l'équipe <i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+
+                </div>
+
+                <!-- TAB 3 -->
+                <div *ngIf="activeTab === 3">
+                    <h4 class="fw-bold mb-3">DES PARTENARIATS MOBILISÉS AUTOUR DE VISION ET VALEURS</h4>
+                    <p class="text-muted mb-4">
+                        <b> Collaborer, mutualiser les efforts et synchroniser les actions</b> ne peut que sécuriser des
+                        résultats et garantir <b>des impacts plus durables.</b> Mais avant de passer à l’action,
+                        <b>clarifier sa logique de partenariat et définir les critères de choix de ses partenaires,
+                            revêt un caractère stratégique.</b>
+                    </p>
+                </div>
+
+                <!-- TAB 4 -->
+                <div *ngIf="activeTab === 4">
+                    <h4 class="fw-bold mb-3">MasterClass transformation managériale</h4>
+                    <p class="text-muted mb-4">
+                        <b> Collaborer, mutualiser les efforts et synchroniser les actions</b> ne peut que sécuriser des
+                        résultats et garantir <b>des impacts plus durables.</b> Mais avant de passer à l’action,
+                        <b>clarifier sa logique de partenariat et définir les critères de choix de ses partenaires,
+                            revêt un caractère stratégique.</b>
+                    </p>
+                </div>
+
+                <!-- TAB 5 -->
+                <div *ngIf="activeTab === 5">
+                    <h4 class="fw-bold mb-3">MasterClass transformation managériale</h4>
+                    <p class="text-muted mb-4">
+                        <b> Collaborer, mutualiser les efforts et synchroniser les actions</b> ne peut que sécuriser des
+                        résultats et garantir <b>des impacts plus durables.</b> Mais avant de passer à l’action,
+                        <b>clarifier sa logique de partenariat et définir les critères de choix de ses partenaires,
+                            revêt un caractère stratégique.</b>
+                    </p>
+                </div>
+
+                <!-- TAB 6 -->
+                <div *ngIf="activeTab === 6">
+                    <h4 class="fw-bold mb-3">MasterClass transformation managériale</h4>
+                    <p class="text-muted mb-4">
+                        <b> Collaborer, mutualiser les efforts et synchroniser les actions</b> ne peut que sécuriser des
+                        résultats et garantir <b>des impacts plus durables.</b> Mais avant de passer à l’action,
+                        <b>clarifier sa logique de partenariat et définir les critères de choix de ses partenaires,
+                            revêt un caractère stratégique.</b>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!--Tabs-Accordions(2)-->
+
+
+    </div>
+</section>

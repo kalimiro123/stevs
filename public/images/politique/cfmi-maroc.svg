@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165.924" height="40.617" viewBox="0 0 165.924 40.617">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_347" data-name="Rectangle 347" width="40.627" height="40.617" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="cfmi_maroc" data-name="cfmi maroc" transform="translate(-1083 -3863)">
+    <g id="Groupe_1815" data-name="Groupe 1815" transform="translate(1083 3863)">
+      <g id="Groupe_1814" data-name="Groupe 1814" clip-path="url(#clip-path)">
+        <path id="Tracé_4647" data-name="Tracé 4647" d="M100.251,31.136s-2.3,6.891,0,12.662,7.06,14.735,5.1,19.778c0,0,6.331-6.5,3.866-14.063s-6.779-8.909-8.965-18.377" transform="translate(-79.8 -25.04)" fill="#f7cb3b"/>
+        <path id="Tracé_4648" data-name="Tracé 4648" d="M153.113,51.024c-.1,4.912-2.624,7.149-4.732,9.125a25.221,25.221,0,0,1,2.119,4.785,13.5,13.5,0,0,1,.548,2.4c1.561-1.642,5.981-8.584,2.065-16.307" transform="translate(-119.328 -41.033)" fill="#61c7f2"/>
+        <path id="Tracé_4649" data-name="Tracé 4649" d="M84.689,93.478s.218,0,.743-1.91c.978-3.559-1.555-10.143-3.667-15.037l-.332-.771q-.221-.479-.408-.954c-.243-.574-.474-1.13-.686-1.662a17.625,17.625,0,0,1-1.151-6.368c-6.243,11.029.471,19.929,3.037,22.6,1.46,1.522,2.514,3.327,2.465,4.1" transform="translate(-61.606 -53.702)" fill="#f27234"/>
+        <path id="Tracé_4650" data-name="Tracé 4650" d="M49.811,89.015a2.228,2.228,0,1,1-2.228-2.228,2.228,2.228,0,0,1,2.228,2.228" transform="translate(-36.474 -69.794)" fill="#ee3e32"/>
+        <path id="Tracé_4651" data-name="Tracé 4651" d="M135.755,57.24a2.353,2.353,0,1,1-2.353-2.353,2.353,2.353,0,0,1,2.353,2.353" transform="translate(-105.389 -44.14)" fill="#5bb949"/>
+        <path id="Tracé_4652" data-name="Tracé 4652" d="M39.252,105.747c-6.2-3.276-7.472-7.581-7.472-7.581a22.325,22.325,0,0,0,.437,3.8c.853,3.395,3.306,8.234,10.234,10.93a22.549,22.549,0,0,1-3.2-7.147" transform="translate(-25.557 -78.945)" fill="#d98dbc"/>
+        <path id="Tracé_4653" data-name="Tracé 4653" d="M21.23,47.526a8.239,8.239,0,0,0-1.946-2.817c-.232-.242-.577-.618-.985-1.115A17.959,17.959,0,0,1,11.734,9.636a20.316,20.316,0,0,0,8.58,38.73c.29,0,.577-.007.864-.019,0,0,.211.019.053-.821" transform="translate(0 -7.749)" fill="#804f9f"/>
+        <path id="Tracé_4654" data-name="Tracé 4654" d="M106.949,0l.007.029a17.956,17.956,0,0,1,10.439,31.614,19.806,19.806,0,0,1-4.121,7.753A20.316,20.316,0,0,0,106.949,0" transform="translate(-86.008)" fill="#456eb5"/>
+      </g>
+    </g>
+    <text id="CFMI_MAROC-2" data-name="CFMI MAROC" transform="translate(1130.924 3891.632)" fill="#191919" font-size="17" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">CFMI</tspan><tspan y="0" font-family="Montserrat-Medium, Montserrat" font-weight="500"> </tspan><tspan y="0" fill="#aaa" font-family="Montserrat-Medium, Montserrat" font-weight="500">MAROC</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,211 @@
+<section class="contact-section py-5">
+    <div class="container">
+        <div class="row g-5">
+
+            <!-- LEFT: FORM -->
+            <div class="col-lg-8">
+                <h5 class="section-title mb-4">Contactez-Nous</h5>
+
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+                    <!-- Objet -->
+                    <div>
+                        <label class="form-label">Objet <span>*</span></label>
+                        <select class="form-select custom-input" formControlName="subject">
+                            <option value="">Sélectionner l'objet de contact</option>
+                            <option value="RejoindreEquipe">Rejoindre l'équipe</option>
+                            <option value="Devenirpartenaire">Devenir partenaire</option>
+                            <option value="DemanderInformation">Demander information</option>
+                            <option value="Reclamer">Réclamer</option>
+                            <option value="Devenirpartenaire">Autre : <span class="text-[#A9A9A9] underline">à préciser dans le message</span></option>
+                        </select>
+                    </div>
+
+                    <!-- Nom -->
+                    <div>
+                        <label class="form-label">Nom Complet <span>*</span></label>
+                        <input type="text" class="form-control custom-input" formControlName="name"
+                            placeholder="Saisir votre nom complet">
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label class="form-label">Adresse email <span>*</span></label>
+                        <input type="email" class="form-control custom-input" formControlName="email"
+                            placeholder="Saisir votre adresse email">
+                    </div>
+
+                    <!-- Téléphone -->
+                    <div>
+                        <label class="form-label">Téléphone</label>
+                        <input type="text" class="form-control custom-input" formControlName="phone"
+                            placeholder="+212 6...">
+                    </div>
+
+                    <!-- Pays -->
+                    <div>
+                        <label class="form-label">Pays <span>*</span></label>
+                        <select class="form-select custom-input" formControlName="country">
+                            <option value="maroc">Maroc</option>
+                            <option value="france">France</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="form-label">Message <span>*</span></label>
+                        <textarea rows="4" class="form-control custom-input" formControlName="message"
+                            placeholder="Saisir votre message"></textarea>
+                    </div>
+
+                    <div class="custom-upload-wrapper">
+
+                        <!-- Hidden input -->
+                        <input
+                          type="file"
+                          #fileInput
+                          hidden
+                          multiple
+                          (change)="onFileSelected($event)"
+                        />
+                      
+                        <!-- Custom button -->
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark btn-sm upload-btn"
+                          (click)="fileInput.click()"
+                        >
+                          Pièces jointes
+                          <i class="fas fa-paperclip ms-2"></i>
+                        </button>
+                      
+                        <!-- Selected files -->
+                        <div class="selected-files mt-2" *ngIf="selectedFiles.length > 0">
+                          <div
+                            class="file-item d-flex justify-content-between align-items-center"
+                            *ngFor="let file of selectedFiles; let i = index"
+                          >
+                            <div class="d-flex align-items-center gap-2">
+                              <i class="fas fa-file-alt text-secondary"></i>
+                              <span class="file-name">{{ file.name }}</span>
+                            </div>
+                      
+                            <i class="fas fa-times remove-icon" (click)="removeFile(i)"></i>
+                          </div>
+                        </div>
+                      
+                      </div>
+
+                    <!-- Actions -->
+                    <div class="captcha-section mt-4">
+                        <div class="captcha-code">A6N7U</div>
+                        <input type="text" placeholder="ENTREZ CAPTCHA" />
+                        <button type="submit" class="btn btn-dark px-4">
+                            Envoyer <i class="fas fa-paper-plane ms-2"></i>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- RIGHT: CONTACT INFO -->
+            <div class="col-lg-4">
+                <h5 class="section-title mb-4">Contact Information</h5>
+
+                <!-- Tabs -->
+                <div class="mb-4 d-flex">
+                    <button class="tab btn" [class.active]="selectedOffice === 'maroc'" (click)="selectOffice('maroc')">
+                        Maroc Office
+                    </button>
+                    <button class="tab btn" [class.active]="selectedOffice === 'canada'"
+                        (click)="selectOffice('canada')">
+                        Canada Office
+                    </button>
+                </div>
+
+                <!-- Address -->
+                <div class="info-item d-flex mb-4 pb-3 border-bottom" *ngIf="selectedOffice === 'maroc'">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="item">
+                        <span>Adresse</span>
+                        <p>12/A, Pôle financier - Anfa park<br>Casablanca, MAROC</p>
+                    </div>
+                </div>
+                <div class="info-item d-flex mb-4 pb-3 border-bottom" *ngIf="selectedOffice === 'canada'">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="item">
+                        <span>Adresse</span>
+                        <p>100 King Street West<br>Toronto, CANADA</p>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="info-item d-flex mb-4 pb-3 border-bottom" *ngIf="selectedOffice === 'maroc'">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="item">
+                        <span>Appelez-Nous</span>
+                        <p>+212 676 5654 654<br>+212 908 097 564</p>
+                    </div>
+                </div>
+                <div class="info-item d-flex mb-4 pb-3 border-bottom" *ngIf="selectedOffice === 'canada'">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="item">
+                        <span>Appelez-Nous</span>
+                        <p>+1 416 555 1234<br>+1 647 555 5678</p>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="info-item d-flex mb-4 pb-3 border-bottom" *ngIf="selectedOffice === 'maroc'">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="item">
+                        <span>E-mail</span>
+                        <p class="text-primary">Womenleadprogram@Contact.com</p>
+                    </div>
+                </div>
+                <div class="info-item d-flex mb-4 pb-3 border-bottom" *ngIf="selectedOffice === 'canada'">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="item">
+                        <span>E-mail</span>
+                        <p class="text-primary">WomenleadprogramCanada@Contact.com</p>
+                    </div>
+                </div>
+
+                <!-- Social -->
+                <div class="rs">
+                    <span>Suivez-nous</span>
+                    <div class="social-icons mt-3">
+                        <span>
+                            <i class="fab fa-facebook-f"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-linkedin-in"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-x-twitter"></i>
+                        </span>
+                        <span>
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

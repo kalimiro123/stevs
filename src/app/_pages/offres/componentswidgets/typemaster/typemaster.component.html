@@ -1,0 +1,1182 @@
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Title -->
+                <div class="col-lg-6">
+                    <div class="members-header mb-4">
+                        <h5 class="fw-bold d-flex align-items-center gap-2">
+                            <span class="circle-number text-white">2</span>
+                            <span class="d-flex align-items-center gap-2">Types des MasterClasses </span>
+                        </h5>
+                    </div>
+                    <div class="quote-wrapper position-relative mb-4 p-2">
+                        <div class="quote-icon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Groupe_1791" data-name="Groupe 1791"
+                                width="17.778" height="12" viewBox="0 0 17.778 16">
+                                <path id="Tracé_4376" data-name="Tracé 4376"
+                                    d="M52,52a1.778,1.778,0,0,0,1.778-1.778V45.881A1.778,1.778,0,0,0,52,44.1H49.531a16.153,16.153,0,0,1,.11-1.874,6.238,6.238,0,0,1,.551-1.764,3.277,3.277,0,0,1,.994-1.214,2.354,2.354,0,0,1,1.543-.5V36a5.359,5.359,0,0,0-2.7.661A5.906,5.906,0,0,0,48.1,38.425,8.747,8.747,0,0,0,47,41.017a13.71,13.71,0,0,0-.331,3.086v6.119A1.778,1.778,0,0,0,48.443,52ZM41.332,52a1.778,1.778,0,0,0,1.778-1.778V45.881A1.778,1.778,0,0,0,41.332,44.1H38.864a16.154,16.154,0,0,1,.11-1.874,6.238,6.238,0,0,1,.551-1.764,3.277,3.277,0,0,1,.994-1.214,2.354,2.354,0,0,1,1.543-.5V36a5.359,5.359,0,0,0-2.7.661,5.906,5.906,0,0,0-1.929,1.764,8.747,8.747,0,0,0-1.1,2.592A13.711,13.711,0,0,0,36,44.1v6.119A1.778,1.778,0,0,0,37.776,52Z"
+                                    transform="translate(-35.998 -36)" fill="#57a85d" />
+                            </svg>
+                        </div>
+                        <p class="quote-text my-2">
+                            Des MasterClasses taillés sur les grands enjeux du top management
+                        </p>
+                        <div class="quote-icon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17.778" height="12" viewBox="0 0 17.778 16">
+                                <g id="Groupe_1791" data-name="Groupe 1791"
+                                    transform="translate(17.778 16) rotate(-180)">
+                                    <path id="Tracé_4376" data-name="Tracé 4376"
+                                        d="M52,52a1.778,1.778,0,0,0,1.778-1.778V45.881A1.778,1.778,0,0,0,52,44.1H49.531a16.153,16.153,0,0,1,.11-1.874,6.238,6.238,0,0,1,.551-1.764,3.277,3.277,0,0,1,.994-1.214,2.354,2.354,0,0,1,1.543-.5V36a5.359,5.359,0,0,0-2.7.661A5.906,5.906,0,0,0,48.1,38.425,8.747,8.747,0,0,0,47,41.017a13.71,13.71,0,0,0-.331,3.086v6.119A1.778,1.778,0,0,0,48.443,52ZM41.332,52a1.778,1.778,0,0,0,1.778-1.778V45.881A1.778,1.778,0,0,0,41.332,44.1H38.864a16.154,16.154,0,0,1,.11-1.874,6.238,6.238,0,0,1,.551-1.764,3.277,3.277,0,0,1,.994-1.214,2.354,2.354,0,0,1,1.543-.5V36a5.359,5.359,0,0,0-2.7.661,5.906,5.906,0,0,0-1.929,1.764,8.747,8.747,0,0,0-1.1,2.592A13.711,13.711,0,0,0,36,44.1v6.119A1.778,1.778,0,0,0,37.776,52Z"
+                                        transform="translate(-35.998 -36)" fill="#57a85d" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="mb-4 paragline">
+                        Du renforcement du système de gouvernance, à la conduite des transformations organisationnelles, en passant par l’élaboration des stratégies centrée sur l’humain et la durabilité, ou même l’arrivée des technologies disruptives, tous nos MasterClasses sont conçus pour vous aider à avoir un regard approfondi sur les enjeux organisationnels d’aujourd’hui et demain, et bien évidemment, vous aider, en tant que leaders responsables de leur 
+                        gestion, de bien concevoir et mettre en place les chantiers stratégiques qu’il faut pour les gérer.
+                    </p>
+                </div>
+
+            <div class="col-lg-6">
+                <img src="/images/offres/typmaster.png" alt="Masters Classes Flower" class="img-fluid">
+            </div>
+        </div>
+
+        <!--Tabs-Accordions-->
+        <div class="row">
+            <!-- LEFT MENU -->
+            <div class="col-md-3">
+                <ul class="list-unstyled policy-menu">
+                    <li [class.active]="activeTab === 1" (click)="setTab(1)">
+                        MasterClass Stratégie
+                    </li>
+
+                    <li [class.active]="activeTab === 2" (click)="setTab(2)">
+                        Politique capital humain
+                    </li>
+
+                    <li [class.active]="activeTab === 3" (click)="setTab(3)">
+                        MasterClass culture organisationnelle
+                    </li>
+                    <li [class.active]="activeTab === 4" (click)="setTab(4)">
+                        MasterClass transformation managériale
+                    </li>
+                </ul>
+            </div>
+            <!-- RIGHT CONTENT -->
+            <div class="col-md-9">
+
+                <!-- TAB 1 -->
+                <div *ngIf="activeTab === 1">
+                    <h4 class="fw-bold mb-3">UN MAST POUR CONCRÉTISER VOTRE VISION</h4>
+
+                    <p class="mb-4 fs-15">
+                        <b class="text-primary">Notre politique « leader care »,</b> vise à vous préparer toutes les
+                        conditions pour faire de votre apprentissage une expérience mémorable en délivrant nos <b
+                            class="text-primary">4 promesses leaders.</b>
+                    </p>
+
+                    <div class="accordion custom-accordion" id="accordionTab1">
+
+                        <!-- Item 1 (ouvert par défaut) -->
+                        <div class="gov-accordion-item open">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-15" (click)="toggleItem($event)">
+                                    <i class="fas fa-minus toggle-icon me-2 text-success"></i>
+                                    Promesse 1 : Une fluidité et simplicité de votre inscription
+                                </button>
+                            </h2>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">
+                                    <p class="fs-15">Via notre plateforme, votre inscription est simplifiée...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="gov-accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-15" (click)="toggleItem($event)">
+                                    <i class="fas fa-plus toggle-icon me-2 text-success"></i>
+                                    Promesse 2 : Une personnalisation totale de votre Expérience Leader.
+                                </button>
+                            </h2>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">
+                                    Contenu promesse 2...
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="gov-accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-15" (click)="toggleItem($event)">
+                                    <i class="fas fa-plus toggle-icon me-2 text-success"></i>
+                                    Promesse 3 : Un Transfert de compétences assuré
+                                </button>
+                            </h2>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">
+                                    Contenu promesse 3...
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="gov-accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-15" (click)="toggleItem($event)">
+                                    <i class="fas fa-plus toggle-icon me-2 text-success"></i>
+                                    Promesse 4 : Indemnisation automatique au cas d'insatisfaction
+                                </button>
+                            </h2>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">
+                                    Contenu promesse 4...
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <button class="btn btn-dark" aria-label="Voir plus">voir plus <i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- TAB 2 -->
+                <div *ngIf="activeTab === 2">
+
+                    <h4 class="fw-bold mb-3">NOS PARCOURS COLLABORATEUR CONÇUS AVEC SOIN ET AMOUR</h4>
+                    <p class="mb-4 fs-15">
+                        Nous ciblons, recrutons, formons, investissons dans l'épanouissement et l'équilibre de vie de
+                        nos équipes, de même, nous proposons des plans de carrière attractifs aux collaborateurs qui ont
+                        <b>le focus sur l'humain et sont capables de servir et épauler les leaders et leurs équipes dans
+                            leur démarche de création de valeur</b> conformément à notre vision et valeurs. Raison pour
+                        laquelle, nous avons pris du temps pour <b>concevoir le parcours collaborateur de nos équipes
+                            avec soin et dévouement.</b>
+                    </p>
+
+                    <div class="accordion custom-accordion" id="accordionTab2">
+
+                        <!-- Recrutement (ouvert par défaut) -->
+                        <div class="gov-accordion-item open">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-15" (click)="toggleItem($event)">
+                                    <i class="fas fa-minus toggle-icon text-success me-2"></i>
+                                    Recrutement
+                                </button>
+                            </h2>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">
+                                    <b class="fs-15 text-dark">Nous cherchons des humains :</b>
+                                    <ul class="mt-2">
+                                        <li class="fs-15">
+                                            <span><b class="text-success">Orientés humain :</b> capable de déchiffrer
+                                                les besoins (fonctionnels et émotionnels) et de satisfaire les attentes
+                                                de nos leaders et du reste de nos parties prenantes, dans le respect les
+                                                standards les plus élevés du professionnalisme et d´éthique</span>
+                                        </li>
+                                        <li class="fs-15 mt-2">
+                                            <span><b class="text-success">Dévoués pour tenir nos promesses client :</b>
+                                                qui croient qu´un engagement pris ou une parole donnée ont la même force
+                                                et portée qu´un contrat.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Intégration -->
+                        <div class="gov-accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-15" (click)="toggleItem($event)">
+                                    <i class="fas fa-plus toggle-icon text-success me-2"></i>
+                                    Intégration
+                                </button>
+                            </h2>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">
+                                    <p class="fs-15">Via notre plateforme, votre inscription est simplifiée, il suffit
+                                        juste de choisir le programme qui répond à vos attentes, et nos équipes
+                                        prendront en charge les formalités avec vos équipes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Formation -->
+                        <div class="gov-accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-15" (click)="toggleItem($event)">
+                                    <i class="fas fa-plus toggle-icon text-success me-2"></i>
+                                    Formation
+                                </button>
+                            </h2>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">
+                                    <p class="fs-15">Via notre plateforme, votre inscription est simplifiée, il suffit
+                                        juste de choisir le programme qui répond à vos attentes, et nos équipes
+                                        prendront en charge les formalités avec vos équipes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Suivi et coaching de performance -->
+                        <div class="gov-accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-15" (click)="toggleItem($event)">
+                                    <i class="fas fa-plus toggle-icon text-success me-2"></i>
+                                    Suivi et coaching de performance
+                                </button>
+                            </h2>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">
+                                    <p class="fs-15">Via notre plateforme, votre inscription est simplifiée, il suffit
+                                        juste de choisir le programme qui répond à vos attentes, et nos équipes
+                                        prendront en charge les formalités avec vos équipes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Évolution de carrière -->
+                        <div class="gov-accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-15" (click)="toggleItem($event)">
+                                    <i class="fas fa-plus toggle-icon text-success me-2"></i>
+                                    Évolution de carrière
+                                </button>
+                            </h2>
+                            <div class="accordion-body">
+                                <div class="accordion-body-inner">
+                                    <p class="fs-15">Via notre plateforme, votre inscription est simplifiée, il suffit
+                                        juste de choisir le programme qui répond à vos attentes, et nos équipes
+                                        prendront en charge les formalités avec vos équipes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row align-items-center gap-3 mt-4 mb-4 p-4 bg-infoste">
+                        <span class="text-muted">Si vous êtes intéressé(e)s de rejoindre une équipe internationale,
+                            multiculturelle et solidaire, nous sommes là pour accueillir.</span>
+                        <button class="btn btn-dark w-50">Rejoindre l'équipe <i
+                                class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+
+                </div>
+
+                <!-- TAB 3 -->
+                <div *ngIf="activeTab === 3">
+
+                    <h4 class="fw-bold mb-3">DES PARTENARIATS MOBILISÉS AUTOUR DE VISION ET VALEURS</h4>
+                    <p class="text-muted mb-4">
+                        <b> Collaborer, mutualiser les efforts et synchroniser les actions</b> ne peut que sécuriser des
+                        résultats et garantir <b>des impacts plus durables.</b> Mais avant de passer à l’action,
+                        <b>clarifier sa logique de partenariat et définir les critères de choix de ses partenaires,
+                            revêt un caractère stratégique.</b>
+                    </p>
+
+
+
+
+                    <div class="accordion custom-accordion" id="accordionTab3">
+
+                        <!-- Item 1 : Une logique de partenariat claire -->
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed px-0 bg-transparent shadow-none fw-semibold text-dark"
+                                    data-bs-toggle="collapse" data-bs-target="#t3_1" aria-expanded="false">
+                                    <i class="fas fa-plus text-success me-2"></i>
+                                    Une logique de partenariat claire
+                                </button>
+                            </h2>
+                            <div id="t3_1" class="accordion-collapse collapse" data-bs-parent="#accordionTab3">
+                                <div class="accordion-body px-0">
+
+                                    <!-- Sous-accordéon -->
+                                    <div class="accordion custom-accordion" id="subAccordionTab3">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button px-0 bg-transparent shadow-none fw-semibold text-dark"
+                                                    data-bs-toggle="collapse" data-bs-target="#t3_sub1"
+                                                    aria-expanded="true">
+                                                    <i class="fas fa-minus text-success me-2"></i>
+                                                    Nos partenaires alignés et engagés
+                                                </button>
+                                            </h2>
+                                            <div id="t3_sub1" class="accordion-collapse collapse show"
+                                                data-bs-parent="#subAccordionTab3">
+                                                <div class="accordion-body ps-4 border-start border-success border-3">
+                                                    <p class="text-muted">
+                                                        Nous avons réussi à tisser des partenariats, certains sont
+                                                        stratégiques, avec des ONG, des universités et labos de
+                                                        recherche, bailleurs de fonds, expert(e)s, et clubs d'affaire,
+                                                        et nous sommes fiers.
+                                                    </p>
+                                                    <p class="text-muted">
+                                                        Et nous souhaitons également <strong>enrichir notre portefeuille
+                                                            de partenaires</strong> en découvrant et implémentant des
+                                                        synergies en faveur de nos leaders, nos causes et notre
+                                                        écosystème dans sa globalité.
+                                                    </p>
+                                                    <p class="text-muted">
+                                                        Si vous partagez nos valeurs, et vous avez l'envie de servir une
+                                                        cause commune, n'hésitez pas à prendre contact avec notre équipe
+                                                        partenariat.
+                                                    </p>
+
+                                                    <!-- Découvrir nos partenaires -->
+                                                    <div class="mt-4">
+                                                        <a class="text-success fw-semibold text-decoration-none"
+                                                            data-bs-toggle="collapse" href="#partenairesList"
+                                                            role="button" aria-expanded="false">
+                                                            Découvrir Nos Partenaires <i
+                                                                class="fas fa-chevron-up ms-1"></i>
+                                                        </a>
+
+                                                        <div class="collapse show" id="partenairesList">
+                                                            <!-- Filtres / Tabs -->
+                                                            <ul class="nav nav-tabs border-0 mt-3 gap-1 flex-wrap"
+                                                                id="partenairesTabs" role="tablist">
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link active px-3 py-1 rounded-0 border-0 border-bottom border-success border-2"
+                                                                        id="tab-tous" data-bs-toggle="tab"
+                                                                        data-bs-target="#tous"
+                                                                        type="button">Tous</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab"
+                                                                        data-bs-target="#institutionnels"
+                                                                        type="button">Institutionnels</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab" data-bs-target="#sponsors"
+                                                                        type="button">Sponsors</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab"
+                                                                        data-bs-target="#universites"
+                                                                        type="button">Universités</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab" data-bs-target="#ong"
+                                                                        type="button">ONG</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab" data-bs-target="#assopro"
+                                                                        type="button">Associations pro</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab" data-bs-target="#medias"
+                                                                        type="button">Médias</button>
+                                                                </li>
+                                                            </ul>
+
+                                                            <!-- Contenu des tabs -->
+                                                            <div class="tab-content mt-3">
+                                                                <div class="tab-pane fade show active" id="tous">
+                                                                    <div class="row g-3">
+
+                                                                        <!-- Card partenaire 1 : CFMI MAROC -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/bronze.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Card partenaire 2 : UnionBank -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/bronze.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Card partenaire 3 : Coca-Cola -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/bronze.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Card partenaire 4 : Toyota -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/gold.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Card partenaire 5 : Microsoft -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/bronze.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Card partenaire 6 : LinkedIn -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/bronze.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div><!-- /row -->
+                                                                </div><!-- /tab-pane tous -->
+
+                                                                <!-- Autres tabs (à remplir selon catégories) -->
+                                                                <div class="tab-pane fade" id="institutionnels">
+                                                                    <p class="text-muted mt-2">Aucun partenaire
+                                                                        institutionnel pour l'instant.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="sponsors">
+                                                                    <p class="text-muted mt-2">Aucun sponsor pour
+                                                                        l'instant.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="universites">
+                                                                    <p class="text-muted mt-2">Aucune université pour
+                                                                        l'instant.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="ong">
+                                                                    <p class="text-muted mt-2">Aucune ONG pour
+                                                                        l'instant.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="assopro">
+                                                                    <p class="text-muted mt-2">Aucune association pro
+                                                                        pour l'instant.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="medias">
+                                                                    <p class="text-muted mt-2">Aucun média pour
+                                                                        l'instant.</p>
+                                                                </div>
+                                                            </div><!-- /tab-content -->
+                                                        </div><!-- /collapse partenairesList -->
+                                                    </div>
+
+                                                </div><!-- /accordion-body (sous-item) -->
+                                            </div>
+                                        </div>
+                                    </div><!-- /sous-accordéon -->
+
+                                </div><!-- /accordion-body item1 -->
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row align-items-center gap-3 mt-4 mb-4 p-4 bg-infoste">
+                            <button class="btn btn-dark w-50">Devenir partenaire<i
+                                    class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- TAB 4 -->
+                <div *ngIf="activeTab === 4">
+
+                    <h4 class="fw-bold mb-3">MasterClass transformation managériale</h4>
+                    <p class="text-muted mb-4">
+                        <b> Collaborer, mutualiser les efforts et synchroniser les actions</b> ne peut que sécuriser des
+                        résultats et garantir <b>des impacts plus durables.</b> Mais avant de passer à l’action,
+                        <b>clarifier sa logique de partenariat et définir les critères de choix de ses partenaires,
+                            revêt un caractère stratégique.</b>
+                    </p>
+
+
+
+
+                    <div class="accordion custom-accordion" id="accordionTab3">
+
+                        <!-- Item 1 : Une logique de partenariat claire -->
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed px-0 bg-transparent shadow-none fw-semibold text-dark"
+                                    data-bs-toggle="collapse" data-bs-target="#t3_1" aria-expanded="false">
+                                    <i class="fas fa-plus text-success me-2"></i>
+                                    Une logique de partenariat claire
+                                </button>
+                            </h2>
+                            <div id="t3_1" class="accordion-collapse collapse" data-bs-parent="#accordionTab3">
+                                <div class="accordion-body px-0">
+
+                                    <!-- Sous-accordéon -->
+                                    <div class="accordion custom-accordion" id="subAccordionTab3">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
+                                                <button
+                                                    class="accordion-button px-0 bg-transparent shadow-none fw-semibold text-dark"
+                                                    data-bs-toggle="collapse" data-bs-target="#t3_sub1"
+                                                    aria-expanded="true">
+                                                    <i class="fas fa-minus text-success me-2"></i>
+                                                    Nos partenaires alignés et engagés
+                                                </button>
+                                            </h2>
+                                            <div id="t3_sub1" class="accordion-collapse collapse show"
+                                                data-bs-parent="#subAccordionTab3">
+                                                <div class="accordion-body ps-4 border-start border-success border-3">
+                                                    <p class="text-muted">
+                                                        Nous avons réussi à tisser des partenariats, certains sont
+                                                        stratégiques, avec des ONG, des universités et labos de
+                                                        recherche, bailleurs de fonds, expert(e)s, et clubs d'affaire,
+                                                        et nous sommes fiers.
+                                                    </p>
+                                                    <p class="text-muted">
+                                                        Et nous souhaitons également <strong>enrichir notre portefeuille
+                                                            de partenaires</strong> en découvrant et implémentant des
+                                                        synergies en faveur de nos leaders, nos causes et notre
+                                                        écosystème dans sa globalité.
+                                                    </p>
+                                                    <p class="text-muted">
+                                                        Si vous partagez nos valeurs, et vous avez l'envie de servir une
+                                                        cause commune, n'hésitez pas à prendre contact avec notre équipe
+                                                        partenariat.
+                                                    </p>
+
+                                                    <!-- Découvrir nos partenaires -->
+                                                    <div class="mt-4">
+                                                        <a class="text-success fw-semibold text-decoration-none"
+                                                            data-bs-toggle="collapse" href="#partenairesList"
+                                                            role="button" aria-expanded="false">
+                                                            Découvrir Nos Partenaires <i
+                                                                class="fas fa-chevron-up ms-1"></i>
+                                                        </a>
+
+                                                        <div class="collapse show" id="partenairesList">
+                                                            <!-- Filtres / Tabs -->
+                                                            <ul class="nav nav-tabs border-0 mt-3 gap-1 flex-wrap"
+                                                                id="partenairesTabs" role="tablist">
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link active px-3 py-1 rounded-0 border-0 border-bottom border-success border-2"
+                                                                        id="tab-tous" data-bs-toggle="tab"
+                                                                        data-bs-target="#tous"
+                                                                        type="button">Tous</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab"
+                                                                        data-bs-target="#institutionnels"
+                                                                        type="button">Institutionnels</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab" data-bs-target="#sponsors"
+                                                                        type="button">Sponsors</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab"
+                                                                        data-bs-target="#universites"
+                                                                        type="button">Universités</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab" data-bs-target="#ong"
+                                                                        type="button">ONG</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab" data-bs-target="#assopro"
+                                                                        type="button">Associations pro</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button
+                                                                        class="nav-link px-3 py-1 rounded-0 border-0"
+                                                                        data-bs-toggle="tab" data-bs-target="#medias"
+                                                                        type="button">Médias</button>
+                                                                </li>
+                                                            </ul>
+
+                                                            <!-- Contenu des tabs -->
+                                                            <div class="tab-content mt-3">
+                                                                <div class="tab-pane fade show active" id="tous">
+                                                                    <div class="row g-3">
+
+                                                                        <!-- Card partenaire 1 : CFMI MAROC -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/bronze.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Card partenaire 2 : UnionBank -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/bronze.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Card partenaire 3 : Coca-Cola -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/bronze.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Card partenaire 4 : Toyota -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/gold.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Card partenaire 5 : Microsoft -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/bronze.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- Card partenaire 6 : LinkedIn -->
+                                                                        <div class="col-md-4">
+                                                                            <div
+                                                                                class="card border bgblue1 rounded-2 p-3 h-100">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between align-items-center mb-2">
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/bronze.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                    <span class="text-warning"><img
+                                                                                            src="images/politique/annoncespons.svg"
+                                                                                            alt="bronze"
+                                                                                            class="img-fluid"></span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="d-flex justify-content-center align-items-center mb-2">
+                                                                                    <img src="images/politique/cfmi-maroc.svg"
+                                                                                        alt="CFMI Maroc"
+                                                                                        class="img-fluid"
+                                                                                        style="max-height:40px; object-fit:contain;">
+                                                                                </div>
+                                                                                <p class="text-center small mb-2">
+                                                                                    impetrasset adgressus quod
+                                                                                    stationibus cogitabat vastarat
+                                                                                    crebro crebro sueti.</p>
+                                                                                <a href="https://www.cfmimaroc.com"
+                                                                                    class="text-center small d-block mb-2"
+                                                                                    target="_blank">
+                                                                                    <i
+                                                                                        class="fas fa-globe me-1"></i>www.cfmimaroc.com
+                                                                                </a>
+                                                                                <div class="d-flex gap-2 mx-auto">
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-instagram"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-facebook"></i></a>
+                                                                                    <a href="#"
+                                                                                        class="text-muted border border-secondary p-1 rounded-circle w-32 h-32 text-center"><i
+                                                                                            class="fab fa-twitter"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div><!-- /row -->
+                                                                </div><!-- /tab-pane tous -->
+
+                                                                <!-- Autres tabs (à remplir selon catégories) -->
+                                                                <div class="tab-pane fade" id="institutionnels">
+                                                                    <p class="text-muted mt-2">Aucun partenaire
+                                                                        institutionnel pour l'instant.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="sponsors">
+                                                                    <p class="text-muted mt-2">Aucun sponsor pour
+                                                                        l'instant.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="universites">
+                                                                    <p class="text-muted mt-2">Aucune université pour
+                                                                        l'instant.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="ong">
+                                                                    <p class="text-muted mt-2">Aucune ONG pour
+                                                                        l'instant.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="assopro">
+                                                                    <p class="text-muted mt-2">Aucune association pro
+                                                                        pour l'instant.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="medias">
+                                                                    <p class="text-muted mt-2">Aucun média pour
+                                                                        l'instant.</p>
+                                                                </div>
+                                                            </div><!-- /tab-content -->
+                                                        </div><!-- /collapse partenairesList -->
+                                                    </div>
+
+                                                </div><!-- /accordion-body (sous-item) -->
+                                            </div>
+                                        </div>
+                                    </div><!-- /sous-accordéon -->
+
+                                </div><!-- /accordion-body item1 -->
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row align-items-center gap-3 mt-4 mb-4 p-4 bg-infoste">
+                            <button class="btn btn-dark w-50">Devenir partenaire<i
+                                    class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!---->
+
+    </div>
+</section>

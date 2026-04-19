@@ -1,0 +1,144 @@
+/* Footer */
+.tmi-footer {
+    background: #04042C;
+    color: #FFFFFF;
+    padding: 80px 0 40px;
+    font-size: 14px;
+}
+
+.tmi-footer h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 180px;
+}
+
+.rating-number {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.rating-text {
+    font-size: 13px;
+}
+
+.stars {
+    color: #ffc107;
+    margin: 4px 0;
+}
+
+.rating-source {
+    font-size: 12px;
+    opacity: .8;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #A9A9A9;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #34d17a;
+}
+
+.footer-links a.active {
+    color: #34d17a;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 10px;
+    background: #FFF;
+    PADDING: 5px;
+    border-radius: 5px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form button {
+    background: #33c36b;
+    border: none;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 0 4px 4px 0;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    color: #A9A9A9;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list i {
+    margin-right: 10px;
+    color: #A9A9A9;
+}
+
+.footer-second {
+    margin-top: 50px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    padding-top: 25px;
+    font-size: 13px;
+}
+
+.footer-bottom .copyright {
+    color: #9A9999;
+    margin-bottom: 0;
+}
+
+.footer-bottom .copyright span {
+    color: #FFFFFF;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 6px;
+    color: white;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #34d17a;
+}
+
+.footer-bottom .tc-pc a {
+    color: #A9A9A9;
+    font-size: 13px;
+    text-decoration: none;
+}

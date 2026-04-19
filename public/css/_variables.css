@@ -1,0 +1,10 @@
+:root{
+    /* Colors */
+    --blue-c2: #F9FBFE;
+    --green-bg: #04740C;
+    --blue-bg: #04042C;
+    --fs-13x: 13px;
+    --fs-14x: 14px;
+    --fs-16x: 16px;
+    --shadow-hover-card: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

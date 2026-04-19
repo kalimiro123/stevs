@@ -1,0 +1,130 @@
+<div class="top-bar py-3" appHeaderBehavior>
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <!-- LEFT: CONTACT ICONS -->
+        <div class="d-flex align-items-center gap-3">
+
+            <!-- PHONE -->
+            <div class="contact-dropdown">
+                <a href="#" class="contact-icon has-arrow">
+                    <i class="fas fa-phone-volume ico"></i>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </a>
+                <div class="contact-box">
+                    <div class="contact-item">
+                        <img src="https://flagcdn.com/ca.svg">
+                        <span>Office : +1 613 777 63 77</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://flagcdn.com/ma.svg">
+                        <span>Office : +212 606 940 940</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHATSAPP -->
+            <div class="contact-dropdown">
+                <a href="#" class="contact-icon has-arrow">
+                    <i class="fab fa-whatsapp ico"></i>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </a>
+
+                <div class="contact-box">
+                    <div class="contact-item">
+                        <img src="https://flagcdn.com/ma.svg">
+                        <span>WhatsApp : +212 606 940 940</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="contact-dropdown">
+                <a href="#" class="contact-icon has-arrow">
+                    <i class="fas fa-at ico"></i>
+                    <i class="fas fa-chevron-down arrow"></i>
+                </a>
+
+                <div class="contact-box">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope text-danger"></i>
+                        <span>contact@tmi.ma</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT: SOCIAL + LANG -->
+        <div class="d-flex align-items-center gap-4">
+
+            <!-- SOCIAL ICONS -->
+            <div class="social-icons">
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+
+            <!-- LANGUAGE -->
+            <div class="dropdown language-dropdown">
+                <a class="dropdown-toggle text-decoration-none text-dark" href="#" data-bs-toggle="dropdown">
+                    <img src="https://flagcdn.com/fr.svg" width="18"> FR
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/gb.svg" width="18">
+                            EN</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/ma.svg" width="18">
+                            AR</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/es.svg" width="18">
+                            ES</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+    <div class="container">
+
+        <a class="navbar-brand" href="/">
+            <img src="images/logo.png" class="logo-light" width="150">
+            <img src="images/logo2.png" class="logo-light2" width="150">
+            <img src="images/logocolor.png" class="logo-dark" width="120">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ms-auto gap-3 align-items-center">
+
+                <!-- HOME WITH ICON -->
+                <li class="nav-item">
+                    <a class="nav-link active" 
+                    routerLink="/"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    >
+                        <img src="images/home.png" class="logo-icon" width="22">
+                    </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" routerLink="/expertises" routerLinkActive="active">Expertises</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/offres" routerLinkActive="active">Offres de valeur</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/Evenements" routerLinkActive="active">Événements</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/Agenda" routerLinkActive="active">Agenda</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/researchLab" routerLinkActive="active">Research Lab</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/DeveloppementDurable" routerLinkActive="active">Développement durable</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/Politiques" routerLinkActive="active">Politiques</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/Contacts" routerLinkActive="active">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

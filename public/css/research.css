@@ -1,0 +1,710 @@
+/* Styles for ResearchComponent */
+
+/* Tmi Talk Section */
+.bodySearchLab .tmi-Labs {
+    background: #fff;
+}
+
+.bodySearchLab .tmi-Labs .circle-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.bodySearchLab .tmi-Labs .circle-label i {
+    color: #343434;
+    font-size: 10px;
+}
+
+.bodySearchLab .tmi-Labs .circle-label i:first-child {
+    color: #2ecc71;
+
+}
+
+.bodySearchLab .tmi-Labs .tmi-Labs-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2d3d;
+    margin-bottom: 12px;
+}
+
+.bodySearchLab .tmi-Labs .tmi-Labs-label i {
+    color: #2ecc71;
+    font-size: 8px;
+    margin-right: 8px;
+}
+
+.bodySearchLab .tmi-Labs .tmi-Labs-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2d3d;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.bodySearchLab .tmi-Labs .tmi-Labs-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #343434;
+}
+
+.bodySearchLab .tmi-Labs .tmi-Labs-content p.beforeBorder {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #343434;
+    padding-left: 60px;
+    position: relative;
+    width: 90%;
+}
+
+.bodySearchLab .tmi-Labs .tmi-Labs-content a {
+    background: #04042C;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: max-content;
+}
+
+.bodySearchLab .tmi-Labs .tmi-Labs-content p.beforeBorder span {
+    color: #0632AD;
+}
+
+.bodySearchLab .tmi-Labs .tmi-Labs-content p.beforeBorder::after {
+    content: '';
+    width: 2px;
+    height: 80%;
+    background: #04740C;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+}
+
+
+.bodySearchLab .tmi-Labs .tmi-Labs-image {
+    position: relative;
+    padding: 20px;
+}
+
+.bodySearchLab .tmi-Labs .tmi-Labs-image img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.bodySearchLab .axe-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bodySearchLab .axe-card .icon-axe {
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2e7d32;
+    font-size: 22px;
+    box-shadow: 0 16px 25px #0000001A;
+}
+
+.bodySearchLab .axe-card .axe-text {
+    font-weight: 500;
+    color: #333;
+}
+
+@media (max-width: 991px) {
+    .bodySearchLab .tmi-Labs .tmi-Labs-content {
+        margin-bottom: 30px;
+    }
+
+    .bodySearchLab .tmi-Labs .tmi-Labs-image::before {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Search Team */
+.bodySearchLab .searchTeam {
+    background: #F9FBFE;
+}
+
+.bodySearchLab .searchTeam .circle-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.bodySearchLab .searchTeam .circle-label i {
+    color: #343434;
+    font-size: 10px;
+}
+
+.bodySearchLab .searchTeam .circle-label i:first-child {
+    color: #2ecc71;
+
+}
+
+/* Title */
+.bodySearchLab .searchTeam .section-title {
+    font-weight: 700;
+    color: #04042C;
+    font-size: 24px;
+}
+
+.bodySearchLab .searchTeam .section-desc {
+    color: #343434;
+    font-size: 15px;
+    max-width: 750px;
+}
+
+
+.team-section {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+/* LEFT CARD */
+.team-detail-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: start;
+}
+
+.team-detail-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team-detail-info img.profil {
+    width: 109px;
+    height: 109px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 3px solid #28a745;
+    object-fit: cover;
+}
+
+.team-detail-info h5 {
+    font-size: 20px;
+    color: #343434;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.team-detail-info p {
+    font-size: 14px;
+    color: #A9A9A9;
+    margin-bottom: 0;
+}
+
+.team-detail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.team-detail-content .badge {
+    background: #57A85D;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.team-detail-content p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #343434;
+}
+
+.team-detail-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.team-detail-content::-webkit-scrollbar-thumb {
+    background: #198754;
+    border-radius: 10px;
+}
+
+/* RIGHT LIST */
+.team-list-wrapper {
+    position: relative;
+    padding-left: 40px;
+}
+
+.team-list {
+    max-height: 420px;
+    overflow-y: auto;
+    direction: rtl;
+    padding-left: 20px;
+}
+
+.team-list>* {
+    direction: ltr;
+}
+
+/* Scroll style */
+.team-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.team-list::-webkit-scrollbar-thumb {
+    background: #198754;
+    border-radius: 10px;
+}
+
+
+/* ITEM */
+.team-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.team-item h6 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #343434;
+}
+
+.team-item small {
+    color: #A9A9A9;
+    font-size: 12px;
+}
+
+.team-item div.country {
+    font-size: 14px;
+    margin-top: 6px;
+    color: #343434;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ACTIVE */
+.team-item.active {
+    background: #0a7d2c;
+    color: #fff;
+    border-color: #0a7d2c;
+}
+
+.team-item.active small,
+.team-item.active div.country,
+.team-item.active h6 {
+    color: #FFFFFF;
+}
+
+/* COUNTERS */
+.list-counter {
+    position: absolute;
+    left: 32px;
+    font-weight: bold;
+    color: #343434;
+    background: #f9fbfe;
+}
+
+.list-counter.top {
+    top: 0;
+}
+
+.list-counter.bottom {
+    bottom: 0;
+}
+
+
+
+
+
+
+/* Acedemy Partner */
+.bodySearchLab .academyPartner {
+    background: #FFFFFF;
+}
+
+.bodySearchLab .academyPartner .circle-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.bodySearchLab .academyPartner .circle-label i {
+    color: #343434;
+    font-size: 10px;
+}
+
+.bodySearchLab .academyPartner .circle-label i:first-child {
+    color: #2ecc71;
+
+}
+
+/* Title */
+.bodySearchLab .academyPartner .section-title {
+    font-weight: 700;
+    color: #04042C;
+    font-size: 24px;
+}
+
+.bodySearchLab .academyPartner .section-desc {
+    color: #343434;
+    font-size: 15px;
+    max-width: 750px;
+}
+
+/* Tabs */
+.bodySearchLab .academyPartner .filter-tabs .nav-link {
+    border: none;
+    color: #6c757d;
+    font-weight: 500;
+    padding: 8px 30px;
+    border-bottom: 2px solid #E2E1E1;
+}
+
+.bodySearchLab .academyPartner .filter-tabs .nav-link.active {
+    color: #2e7d32;
+    border-bottom: 2px solid #2e7d32;
+    background: transparent;
+}
+
+/* Card */
+.bodySearchLab .academyPartner .partner-card {
+    background: #F9FBFE;
+    border-radius: 12px;
+    padding: 40px 20px;
+    height: 100%;
+    position: relative;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bodySearchLab .academyPartner .partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.bodySearchLab .academyPartner .partner-logo {
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Flag */
+.bodySearchLab .academyPartner .flag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+}
+
+/* Name */
+.bodySearchLab .academyPartner .partner-name {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Links */
+.bodySearchLab .academyPartner .partner-link {
+    font-size: 14px;
+    color: #0632AD;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: underline;
+}
+
+.bodySearchLab .academyPartner .partner-link i {
+    font-size: 13px;
+}
+
+.bodySearchLab .academyPartner .partner-link:hover {
+    text-decoration: underline;
+}
+
+/* Social */
+.bodySearchLab .academyPartner .socials {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bodySearchLab .academyPartner .socials a {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 14px;
+    color: #777;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.bodySearchLab .academyPartner .socials a:hover {
+    color: #04740C;
+    border-color: #04740C;
+}
+
+
+.bodySearchLab .loading .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #04042c;
+    /* green like your design */
+    border-radius: 50%;
+    display: inline-block;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.bodySearchLab .loading .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.bodySearchLab .loading .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+
+    to {
+        transform: translateY(-15px);
+        opacity: 1;
+    }
+}
+
+
+
+.bodySearchLab .btn-custom {
+    background: #04042C;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.bodySearchLab .btn-custom:hover {
+    background: #151a3d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Publication Lab */
+.bodySearchLab .publicationLabo {
+    background: #F9FBFE;
+}
+
+.bodySearchLab .publicationLabo .circle-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.bodySearchLab .publicationLabo .circle-label i {
+    color: #343434;
+    font-size: 10px;
+}
+
+.bodySearchLab .publicationLabo .circle-label i:first-child {
+    color: #2ecc71;
+
+}
+
+
+/* Title */
+.bodySearchLab .publicationLabo .section-title {
+    font-weight: 700;
+    color: #04042C;
+    font-size: 24px;
+}
+
+/* Text box with left border */
+.bodySearchLab .publicationLabo p.beforeBorder {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #343434;
+    padding-left: 60px;
+    position: relative;
+    width: 80%;
+}
+
+.bodySearchLab .publicationLabo p.beforeBorder span {
+    color: #0632AD;
+}
+
+.bodySearchLab .publicationLabo p.beforeBorder::after {
+    content: '';
+    width: 2px;
+    height: 80%;
+    background: #04740C;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+}
+
+/* Steps */
+.bodySearchLab .publicationLabo .step-item {
+    position: relative;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.bodySearchLab .publicationLabo .step-item .timeline-line {
+    position: absolute;
+    top: 60px;
+    left: 80%;
+    width: 80%;
+    border-top: 2px dashed #cfd8dc;
+    z-index: 0;
+}
+
+.bodySearchLab .publicationLabo .step-item .timeline-line i {
+    margin-top: -8px;
+    font-size: 12px;
+    color: #28a745;
+}
+
+/* Icon circle */
+.bodySearchLab .publicationLabo .step-icon {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #0b1b3f;
+    box-shadow: 0 17px 20px #0000001F;
+}
+
+
+
+/* Title */
+.bodySearchLab .publicationLabo .step-title {
+    font-weight: 600;
+    color: #04042C;
+    font-size: 15px;
+    height: 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* Text */
+.bodySearchLab .publicationLabo .step-text {
+    font-size: 14px;
+    color: #343434;
+    height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+/* Dotted line (desktop only) */
+@media (min-width: 768px) {
+    .bodySearchLab .publicationLabo .step-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        right: -50%;
+        width: 100%;
+        border-top: 2px dashed #cfd8dc;
+        z-index: -1;
+    }
+}
+
+/* Button */
+.bodySearchLab .publicationLabo .btn-main {
+    background: #0b1b3f;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.bodySearchLab .publicationLabo .btn-main:hover {
+    background: #08122b;
+}

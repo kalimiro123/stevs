@@ -1,0 +1,24 @@
+.main-navbar {
+    position: sticky !important;
+    top: 0 !important;
+}
+
+.main-navbar .nav-link {
+    color: #333 !important;
+}
+
+.main-navbar .nav-link:hover {
+    color: #04740C !important;
+}
+
+.logo-light {
+    display: none;
+}
+
+.main-navbar .logo-light2 {
+    display: block !important;
+}
+
+.main-navbar .logo-light2.hided {
+    display: none !important;
+}

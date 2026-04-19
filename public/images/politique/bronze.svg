@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.25" height="24" viewBox="0 0 20.25 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#eef4f6"/>
+      <stop offset="0.281" stop-color="#e3e3e3"/>
+      <stop offset="0.499" stop-color="#eceef2"/>
+      <stop offset="0.763" stop-color="#a8a8a8"/>
+      <stop offset="1" stop-color="#f0f0f0"/>
+      <stop offset="1" stop-color="#b5b3b4"/>
+    </linearGradient>
+  </defs>
+  <g id="gold" transform="translate(-23.472)">
+    <path id="Tracé_4445" data-name="Tracé 4445" d="M86.842,0h-6.72L70.415,14.187h6.72Z" transform="translate(-43.12)" fill="#bf392c"/>
+    <path id="Tracé_4446" data-name="Tracé 4446" d="M23.472,0h6.72L39.9,14.187h-6.72Z" fill="#e2574c"/>
+    <path id="Tracé_4447" data-name="Tracé 4447" d="M59.9,93.887a8.213,8.213,0,1,1-8.258,8.213A8.212,8.212,0,0,1,59.9,93.887Z" transform="translate(-25.926 -86.314)" fill="url(#linear-gradient)"/>
+    <path id="Tracé_4448" data-name="Tracé 4448" d="M85.822,122.053a5.973,5.973,0,1,0,6.018,5.973A6.014,6.014,0,0,0,85.822,122.053Zm0,10.453a4.48,4.48,0,1,1,4.514-4.48A4.51,4.51,0,0,1,85.822,132.506Z" transform="translate(-51.852 -112.24)" fill="#fdfdfd"/>
+  </g>
+</svg>

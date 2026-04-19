@@ -1,0 +1,232 @@
+/* ===== TOP BAR ===== */
+.top-bar {
+    position: relative;
+    z-index: 1000;
+    background: #fff;
+}
+
+.contact-icon {
+    color: #04740C;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.contact-icon .ico {
+    font-size: 18px;
+}
+
+.contact-icon .arrow {
+    font-size: 11px;
+    transition: transform 0.3s ease;
+}
+
+/* rotated state */
+.contact-dropdown.open .arrow {
+    transform: rotate(180deg);
+}
+
+.contact-dropdown {
+    position: relative;
+}
+
+.contact-box {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: #fff;
+    padding: 12px 15px;
+    border-radius: 6px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    min-width: 240px;
+    display: none;
+    z-index: 999;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item img {
+    width: 22px;
+}
+
+/* LANGUAGE DROPDOWN OVERRIDE - FORCE VISIBLE */
+.language-dropdown {
+    position: relative;
+}
+
+.language-dropdown .dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    min-width: 120px !important;
+    background: #fff !important;
+    border: 1px solid #dee2e6 !important;
+    border-radius: 0.375rem !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    padding: 0.5rem 0 !important;
+    margin: 0.125rem 0 0 !important;
+    z-index: 1000 !important;
+    display: block !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(-10px) !important;
+    transition: all 0.25s ease !important;
+}
+
+.language-dropdown.show .dropdown-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+.language-dropdown .dropdown-item {
+    padding: 0.5rem 1rem !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    display: block !important;
+    white-space: nowrap !important;
+    font-size: 14px !important;
+}
+
+.language-dropdown .dropdown-item:hover {
+    background-color: #f8f9fa !important;
+    color: #04740C !important;
+}
+
+.language-dropdown .dropdown-toggle {
+    cursor: pointer !important;
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.social-icons a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: 1px solid #7B7B7B;
+    color: #7B7B7B;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+    border-color: #04740C;
+    color: #04740C;
+}
+
+/* ===== MAIN NAVBAR ===== */
+.main-navbar {
+    position: fixed;
+    top: 70px;
+    /* height of top bar */
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    background: transparent;
+    padding: 17px 0;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid #ffffffd5;
+    z-index: 99;
+}
+
+/* links on hero */
+.main-navbar .nav-link {
+    color: #fff;
+    position: relative;
+    font-size: 13px;
+}
+
+.main-navbar .nav-link.active{
+    position: relative;
+    color: #04740C !important;
+    font-weight: 500;
+}
+
+.main-navbar .nav-link.active::before{
+    content: '';
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #04740C;
+}
+
+.main-navbar.scrolled .nav-link.active::before{
+    bottom: -14px;
+}
+
+/* scrolled state */
+.main-navbar.scrolled {
+    background: #fff;
+    padding: 12px 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    top: 0;
+}
+
+.main-navbar.scrolled .nav-link {
+    color: #333 !important;
+}
+
+/* Logo swap */
+.logo-dark {
+    display: none;
+}
+
+/* ===== SCROLLED STATE ===== */
+.main-navbar.scrolled {
+    background: #fff;
+    padding: 12px 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.main-navbar.scrolled .nav-link {
+    color: #333 !important;
+}
+
+.main-navbar.scrolled .nav-link:hover {
+    color: #2ecc71 !important;
+}
+
+.main-navbar .logo-light2{
+    display: none;
+  }
+
+.main-navbar.scrolled .logo-dark {
+    display: inline-block;
+}
+
+
+@media (max-width: 992px) {
+
+    .main-navbar .navbar-collapse{
+        background: #FFFFFF;
+    }
+
+    .main-navbar .nav-link {
+        color: #000 !important;
+    }
+}

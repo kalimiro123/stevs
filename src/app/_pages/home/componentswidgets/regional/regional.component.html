@@ -1,0 +1,58 @@
+<section class="regional-section container py-5">
+    <!-- HEADER -->
+    <div class="members-section bg-transparent mb-5">
+      <div class="circle-label">
+        <span class="d-flex align-items-center gap-2"><i class="fas fa-circle"></i> <i class="fas fa-circle"></i>
+        </span> Regional representatives
+      </div>
+  
+      <h2 class="font-bold mt-0">A global presence</h2>
+  
+      <div class="members-intro">
+        <p>
+          Pour être plus proche de vous et mieux comprendre et répondre à vos attentes,
+          nous avons implanté des <strong>bureaux de représentation</strong> dans les quatre coins du monde.
+          Nos représentant(e)s sont à votre disposition pour mieux vous servir.
+        </p>
+      </div>
+    </div>
+  
+    <div class="map-wrapper position-relative mx-auto" style="max-width: 900px;">
+      <img src="images/world-map.png" alt="World Map" class="img-fluid d-block" />
+      
+      <!-- Pins -->
+      <ng-container *ngFor="let loc of locations; let i = index">
+        <div
+          class="map-pin"
+          [style.left.%]="loc.leftPercent"
+          [style.top.%]="loc.topPercent"
+          (click)="togglePopup(i)"
+          tabindex="0"
+          role="button"
+          aria-label="{{loc.country}} office location"
+        >
+          <img [src]="loc.flag" [alt]="loc.flag + ' representative'" class="pin-img" />
+          <div class="pin-border"></div>
+  
+          <div class="pin-popup" *ngIf="loc.showPopup" (click)="$event.stopPropagation()" role="tooltip">
+            <div class="popup-flag">
+              <img [src]="loc.flag" [alt]="loc.country + ' flag'" />
+              <strong class="popup-country">{{ loc.country | uppercase }}</strong>
+            </div>
+            <ul class="popup-details list-unstyled mb-0 mt-2">
+              <li><i class="fas fa-building me-2"></i> {{ loc.office }}</li>
+              <li><i class="fas fa-map-marker-alt me-2"></i> {{ loc.city }}</li>
+              <li>
+                <i class="fas fa-link me-2"></i>
+                <a [href]="loc.websiteUrl" target="_blank" rel="noopener noreferrer">{{ loc.website }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  
+    <div class="text-center mt-5">
+      <button class="btn btn-become-partner btn-lg" aria-label="Become partner">Devenir partenaire <i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>

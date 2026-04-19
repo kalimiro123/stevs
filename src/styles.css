@@ -1,0 +1,191 @@
+@import '../public/css/_variables.css';
+@import '../public/css/_buttons.css';
+
+
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+
+.breadcrumb-section {
+    background-color: #FFFFFF;
+    padding: 80px 0;
+}
+
+.breadcrumb-section .breadcrumb-content {
+    max-width: 500px;
+}
+
+
+.breadcrumb-section .breadcrumb-content h3,.breadcrumb-section .breadcrumb-content p {
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    padding: 0 30px;
+    width: fit-content;
+}
+
+.breadcrumb-section h3 .quote-icon1, .quote-icon1 {
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+.breadcrumb-section h3 .quote-icon2,.quote-icon2 {
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+}
+
+.breadcrumb-section p {
+    padding-left: 20px;
+    border-left: 2px solid #04740C;
+    color: #343434;
+    font-size: 15px;
+}
+
+.breadcrumb-section .det-breadcrumb {
+    margin-left: 50px;
+}
+
+.breadcrumb-section .breadcrumb-link {
+    font-size: 12px;
+    font-weight: 600;
+    color: #28a745;
+    text-decoration: none;
+    padding-left: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumb-section .breadcrumb-link:hover {
+    color: #1e7e34;
+    border-color: #1e7e34;
+}
+
+.breadcrumb-section .breadcrumb-link span {
+    color: #A9A9A9;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.breadcrumb-section .image-wrapper img {
+    max-height: 580px;
+    object-fit: cover;
+}
+
+
+/* Responsive Styles */
+
+/* Styles for OffreComponent */
+.gouvernance-section {
+    background: #FFFFFF;
+    padding: 60px 0;
+}
+
+/* LEFT MENU */
+.gouvernance-section .policy-menu li {
+    padding: 12px 0;
+    color: #9aa0a6;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.gouvernance-section .policy-menu li.active {
+    color: #198754;
+    font-weight: 600;
+}
+
+/* ACCORDION CUSTOM */
+.gouvernance-section .custom-accordion .accordion-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.gouvernance-section .custom-accordion .accordion-button {
+    background: transparent;
+    box-shadow: none;
+    padding-left: 0;
+    font-weight: 500;
+}
+
+.gouvernance-section .custom-accordion .accordion-button:not(.collapsed) {
+    color: #000;
+}
+
+.gouvernance-section .custom-accordion .accordion-body {
+    border-left: 3px solid #198754;
+    margin-left: 30px;
+    padding-left: 15px;
+    color: #6c757d;
+}
+
+.gouvernance-section .accordion-button::after {
+    display: none;
+}
+.circle-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343434;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.circle-label i {
+    color: #343434;
+    font-size: 10px;
+}
+
+
+.circle-label i:first-child {
+    color: #2ecc71;
+}
+
+p.paragline {
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: 2px solid #04740C;
+    color: #343434;
+}
+
+/***Default number***/
+
+ .circle-number {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  background: #2e7d32;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 16px 25px #0000001A;
+}
+.quote-wrapper {width: fit-content;}
+.quote-text{font-size: 15px;color: #343434;font-weight: 400;}
+
+/*** Scene Section **/
+
+
+
+
+.green-bg {background-color:  var(--green-bg) !important;}
+.green-text{color:  var(--green-bg) !important;}
+.blue-bg2{background-color: var(--blue-c2) !important;}
+.blue-bg{background-color: var(--blue-bg) !important;}
+.blue-text{color: var(--blue-bg) !important;}
+.shadow-card{box-shadow: var(--shadow-hover-card) !important;}
+.shadow-hov-card:hover{box-shadow: var(--shadow-hover-card) !important;}
+.fs-13x{font-size: var(--fs-13x) !important;}
+.fs-14x{font-size: var(--fs-14x) !important;}
+.fs-16x{font-size: var(--fs-16x) !important;}
+/* Styles for OffreComponent */
