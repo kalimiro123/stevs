@@ -30,7 +30,7 @@
 
             <!-- Card 1 – Conseil d'administration -->
             <div class="col-12 col-md-4 gov-card-col">
-                <div class="gov-card active">
+                <div class="gov-card ">
                     <div class="icon-wrapper">
                         <!-- Board / shield icon -->
                         <img src="images/expertise/CONSEIL.svg" alt="Board Icon" class="icon-svg w-100">
@@ -76,61 +76,69 @@
         <!---->
 
 
-        <div class="gov-accordion">
 
-            <!-- Item 1 : Attributions (ouvert par défaut) -->
-            <div class="gov-accordion-item open">
-                <button class="gov-accordion-header" (click)="toggleItem($event)">
-                    <i class="fa fa-minus toggle-icon"></i>
-                    <span class="gov-accordion-header-title">Attributions</span>
-                </button>
-                <div class="gov-accordion-body">
-                    <div class="gov-accordion-body-inner">
-                        <p class="gov-intro">
-                            Acteur majeur de la gouvernance, le conseil d'administration veille sur le bon
-                            fonctionnement de l'organisation dans son ensemble :
-                        </p>
-                        <ul class="gov-list">
-                            <li>Décrypter les enjeux et les challenges auxquels l'organisation est exposée.</li>
-                            <li>Définir la mission, la vision et les valeurs.</li>
-                            <li>Déterminer les orientations stratégiques globales.</li>
-                            <li>Valider la stratégie, les budgets et les états financiers annuels.</li>
-                            <li>Nommer l'équipe dirigeante et fixer sa rémunération.</li>
-                            <li>Superviser la mise en œuvre stratégique par le management, et s'assurer du suivi de sa
-                                performance.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                        <div class=" gov-accordion" id="egaliteAccordion">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="problematiquetHeading">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#problematiqueCollapse" aria-expanded="false" aria-controls="problematiqueCollapse">
+                                  <i class="fas fa-plus me-2"></i> 
+                                  <i class="fas fa-minus me-2"></i> 
+                                    Attributions
+                                </button>
+                              </h2>
+                              <div id="problematiqueCollapse" class="accordion-collapse collapse" aria-labelledby="problematiquetHeading" data-bs-parent="#egaliteAccordion">
+                                <div class="accordion-body">
+                                    <div class="gov-accordion-body-inner">
+                                        <p class="gov-intro">
+                                            Acteur majeur de la gouvernance, le conseil d'administration veille sur le bon
+                                            fonctionnement de l'organisation dans son ensemble :
+                                        </p>
+                                        <ul class="gov-list">
+                                            <li>Décrypter les enjeux et les challenges auxquels l'organisation est exposée.</li>
+                                            <li>Définir la mission, la vision et les valeurs.</li>
+                                            <li>Déterminer les orientations stratégiques globales.</li>
+                                            <li>Valider la stratégie, les budgets et les états financiers annuels.</li>
+                                            <li>Nommer l'équipe dirigeante et fixer sa rémunération.</li>
+                                            <li>Superviser la mise en œuvre stratégique par le management, et s'assurer du suivi de sa
+                                                performance.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="engagementHeading">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#engagementCollapse" aria-expanded="false" aria-controls="engagementCollapse">
+                                    <i class="fas fa-plus me-2"></i> 
+                                    <i class="fas fa-minus me-2"></i> 
+                                    Notre Expertise
+                                </button>
+                              </h2>
+                              <div id="engagementCollapse" class="accordion-collapse collapse" aria-labelledby="engagementHeading" data-bs-parent="#egaliteAccordion">
+                                <div class="accordion-body">
+                                    <div class="gov-accordion-body-inner">
+                                        <p class="gov-intro">
+                                            Notre expertise couvre l'ensemble des dimensions de la gouvernance d'entreprise :
+                                        </p>
+                                        <ul class="gov-list">
+                                            <li>Évaluation et renforcement des pratiques de gouvernance.</li>
+                                            <li>Accompagnement à la structuration des organes de gouvernance.</li>
+                                            <li>Formation et coaching des administrateurs et dirigeants.</li>
+                                            <li>Audit des dispositifs de contrôle interne et de gestion des risques.</li>
+                                            <li>Mise en place de chartes et de règlements intérieurs.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
 
-            <!-- Item 2 : Notre Expertise (fermé) -->
-            <div class="gov-accordion-item mb-5">
-                <button class="gov-accordion-header" (click)="toggleItem($event)">
-                    <i class="fa fa-plus toggle-icon"></i>
-                    <span class="gov-accordion-header-title">Notre Expertise</span>
-                </button>
-                <div class="gov-accordion-body">
-                    <div class="gov-accordion-body-inner">
-                        <p class="gov-intro">
-                            Notre expertise couvre l'ensemble des dimensions de la gouvernance d'entreprise :
-                        </p>
-                        <ul class="gov-list">
-                            <li>Évaluation et renforcement des pratiques de gouvernance.</li>
-                            <li>Accompagnement à la structuration des organes de gouvernance.</li>
-                            <li>Formation et coaching des administrateurs et dirigeants.</li>
-                            <li>Audit des dispositifs de contrôle interne et de gestion des risques.</li>
-                            <li>Mise en place de chartes et de règlements intérieurs.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                                <button class="btn btn-darkprimary w-50 float-end mt-4 mb-3 d-flex justify-content-between align-items-center">
+                                    <span> Nos MasterClasses Gouvernance </span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                        </div>
 
-            <button class="btn btn-darkprimary w-50 float-end mt-4 mb-3 d-flex justify-content-between align-items-center">
-                <span> Nos MasterClasses Gouvernance </span>
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-
-        </div>
 
         <!---->
     </div>

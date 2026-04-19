@@ -181,6 +181,7 @@ p.paragline {
 .green-bg {background-color:  var(--green-bg) !important;}
 .green-text{color:  var(--green-bg) !important;}
 .blue-bg2{background-color: var(--blue-c2) !important;}
+.blue-bg3{background-color: var(--blue-c3) !important;}
 .blue-bg{background-color: var(--blue-bg) !important;}
 .blue-text{color: var(--blue-bg) !important;}
 .shadow-card{box-shadow: var(--shadow-hover-card) !important;}
@@ -188,4 +189,35 @@ p.paragline {
 .fs-13x{font-size: var(--fs-13x) !important;}
 .fs-14x{font-size: var(--fs-14x) !important;}
 .fs-16x{font-size: var(--fs-16x) !important;}
+.card-bg-hov:hover{background-color: var(--green-bg) !important;}
+.card-bg-hov:hover *{color: #fff !important;}
 /* Styles for OffreComponent */
+ .accordion-button:not(.collapsed){
+    background: transparent;
+    box-shadow: none;
+}
+
+ .accordion-button i{
+  color: #04740C;
+}
+
+ .accordion-button i.fa-plus{
+  display: block;
+}
+
+.accordion-button i.fa-minus{
+  display: none;
+}
+
+
+.accordion-button:not(.collapsed) i.fa-plus{
+  display: none
+}
+
+ .accordion-button:not(.collapsed) i.fa-minus{
+  display: block
+}
+
+ .accordion-button::after{
+  background-image: none;
+}

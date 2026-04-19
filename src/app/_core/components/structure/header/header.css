@@ -3,6 +3,7 @@
     position: relative;
     z-index: 1000;
     background: #fff;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .contact-icon {
@@ -13,6 +14,8 @@
     align-items: center;
     gap: 10px;
     text-decoration: none;
+    background: none;
+    border: none;
 }
 
 .contact-icon .ico {
@@ -141,12 +144,11 @@
 .main-navbar {
     position: fixed;
     top: 70px;
-    /* height of top bar */
     left: 0;
     width: 100%;
     z-index: 2000;
     background: transparent;
-    padding: 17px 0;
+    padding: 20px 0;
     transition: all 0.3s ease;
     border-bottom: 2px solid #ffffffd5;
     z-index: 99;
@@ -157,18 +159,22 @@
     color: #fff;
     position: relative;
     font-size: 13px;
+    box-shadow: none;
+    border: none;
 }
 
 .main-navbar .nav-link.active{
     position: relative;
     color: #04740C !important;
     font-weight: 500;
+    outline: none;
+    box-shadow: none;
 }
 
 .main-navbar .nav-link.active::before{
     content: '';
     position: absolute;
-    bottom: -23px;
+    bottom: -27px;
     left: 0;
     width: 100%;
     height: 2px;

@@ -2,14 +2,14 @@
     <div class="container d-flex justify-content-between align-items-center">
 
         <!-- LEFT: CONTACT ICONS -->
-        <div class="d-flex align-items-center gap-3">
+        <div class="d-flex align-items-center gap-4">
 
             <!-- PHONE -->
             <div class="contact-dropdown">
-                <a href="#" class="contact-icon has-arrow">
+                <button class="contact-icon has-arrow">
                     <i class="fas fa-phone-volume ico"></i>
                     <i class="fas fa-chevron-down arrow"></i>
-                </a>
+                </button>
                 <div class="contact-box">
                     <div class="contact-item">
                         <img src="https://flagcdn.com/ca.svg">
@@ -24,10 +24,10 @@
 
             <!-- WHATSAPP -->
             <div class="contact-dropdown">
-                <a href="#" class="contact-icon has-arrow">
+                <button class="contact-icon has-arrow">
                     <i class="fab fa-whatsapp ico"></i>
                     <i class="fas fa-chevron-down arrow"></i>
-                </a>
+                </button>
 
                 <div class="contact-box">
                     <div class="contact-item">
@@ -39,10 +39,10 @@
 
             <!-- EMAIL -->
             <div class="contact-dropdown">
-                <a href="#" class="contact-icon has-arrow">
+                <button class="contact-icon has-arrow">
                     <i class="fas fa-at ico"></i>
                     <i class="fas fa-chevron-down arrow"></i>
-                </a>
+                </button>
 
                 <div class="contact-box">
                     <div class="contact-item">
@@ -59,25 +59,25 @@
 
             <!-- SOCIAL ICONS -->
             <div class="social-icons">
-                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="twitter"><i class="fab fa-x-twitter"></i></a>
+                <a class="instagram"><i class="fab fa-instagram"></i></a>
+                <a class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a class="twitter"><i class="fab fa-x-twitter"></i></a>
             </div>
 
             <!-- LANGUAGE -->
             <div class="dropdown language-dropdown">
-                <a class="dropdown-toggle text-decoration-none text-dark" href="#" data-bs-toggle="dropdown">
+                <a class="dropdown-toggle text-decoration-none text-dark" data-bs-toggle="dropdown">
                     <img src="https://flagcdn.com/fr.svg" width="18"> FR
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/gb.svg" width="18">
+                    <li><a class="dropdown-item"><img src="https://flagcdn.com/gb.svg" width="18">
                             EN</a>
                     </li>
-                    <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/ma.svg" width="18">
+                    <li><a class="dropdown-item"><img src="https://flagcdn.com/ma.svg" width="18">
                             AR</a>
                     </li>
-                    <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/es.svg" width="18">
+                    <li><a class="dropdown-item"><img src="https://flagcdn.com/es.svg" width="18">
                             ES</a>
                     </li>
                 </ul>
@@ -107,23 +107,23 @@
 
                 <!-- HOME WITH ICON -->
                 <li class="nav-item">
-                    <a class="nav-link active" 
+                    <button class="nav-link active" 
                     routerLink="/"
                     routerLinkActive="active"
                     [routerLinkActiveOptions]="{ exact: true }"
                     >
                         <img src="images/home.png" class="logo-icon" width="22">
-                    </a>
+                    </button>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" routerLink="/expertises" routerLinkActive="active">Expertises</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/offres" routerLinkActive="active">Offres de valeur</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/Evenements" routerLinkActive="active">Événements</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/Agenda" routerLinkActive="active">Agenda</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/researchLab" routerLinkActive="active">Research Lab</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/DeveloppementDurable" routerLinkActive="active">Développement durable</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/Politiques" routerLinkActive="active">Politiques</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="/Contacts" routerLinkActive="active">Contact</a></li>
+                <li class="nav-item"><button class="nav-link" routerLink="/expertises" routerLinkActive="active">Expertises</button></li>
+                <li class="nav-item"><button class="nav-link" routerLink="/offres" routerLinkActive="active">Offres de valeur</button></li>
+                <li class="nav-item"><button class="nav-link" routerLink="/Evenements" routerLinkActive="active">Événements</button></li>
+                <li class="nav-item"><button class="nav-link" routerLink="/Agenda" routerLinkActive="active">Agenda</button></li>
+                <li class="nav-item"><button class="nav-link" routerLink="/researchLab" routerLinkActive="active">Research Lab</button></li>
+                <li class="nav-item"><button class="nav-link" routerLink="/DeveloppementDurable" routerLinkActive="active">Développement durable</button></li>
+                <li class="nav-item"><button class="nav-link" routerLink="/Politiques" routerLinkActive="active">Politiques</button></li>
+                <li class="nav-item"><button class="nav-link" routerLink="/Contacts" routerLinkActive="active">Contact</button></li>
             </ul>
         </div>
     </div>

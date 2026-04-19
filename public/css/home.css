@@ -237,6 +237,7 @@ textarea:focus {
 .contact-icon:focus {
     outline: 2px solid #04740C;
     outline-offset: 2px;
+    box-shadow: none;
 }
 
 .social-icons a:focus {
